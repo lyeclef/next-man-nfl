@@ -1,0 +1,17 @@
+[
+  {
+    "id": "2026-week7-la-adams",
+    "team": "LA",
+    "playerId": "00-0031381",
+    "player": "Davante Adams",
+    "position": "WR",
+    "description": "Hamstring injury; coach announced an extended absence",
+    "status": "OUT",
+    "statusBasis": "Team announcement of absence; not a final Week 7 game-status designation",
+    "expectedReturn": "6–10 weeks, according to the team; no exact return date",
+    "source": "https://www.therams.com/news/rams-injury-updates-cardinals-week-6-2026-blake-grupe-torn-acl-out-for-season-poona-ford-davante-adams-kobie-turner-trent-mcduffie-raiders",
+    "verifiedPublishedAt": "2026-10-19T23:01:06.726Z",
+    "verifiedModifiedAt": "2026-10-19T23:04:16.851Z",
+    "requiredText": ["Davante Adams", "semitendinosus", "6-10 weeks"]
+  }
+]

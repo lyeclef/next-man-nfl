@@ -1,0 +1,198 @@
+{
+  "generatedAt": "2026-10-20T22:01:40.149Z",
+  "status": "development_only",
+  "protocol": {
+    "version": 1,
+    "lockedAt": "2026-10-20T22:01:39.881Z",
+    "name": "Role-balanced hierarchical transfer candidate",
+    "features": [
+      "intercept",
+      "QB:role1",
+      "QB:role2",
+      "QB:role3",
+      "RB:role1",
+      "RB:role2",
+      "RB:role3",
+      "WR:role1",
+      "WR:role2",
+      "WR:role3",
+      "TE:role1",
+      "TE:role2",
+      "TE:role3",
+      "baseline/vacated",
+      "trend/vacated"
+    ],
+    "fit": "Pooled opportunity transfer coefficients with injury-position deviations shrunk toward the pooled coefficients. Only opportunity-eligible positions receive transfers. Per-event and per-position weights prevent reserve-heavy charts dominating the fit.",
+    "selection": "Lambda [1,10,100], scale [0,0.25,0.5,1]. Select on earlier season primary same-position replacement workload MAE; at least five selection injury cases. No test outcomes in selection.",
+    "primaryCohort": "Exactly one same-position candidate per event and opportunity, selected by prior usage rank, then prior depth rank, then stable ID. Never selected by actual production.",
+    "limitation": "2022–2024 outcomes were examined during earlier development. All results here are retrospective development diagnostics, not a fresh untouched test. Candidate remains research only; no qualification policy is changed."
+  },
+  "folds": [
+    {
+      "testSeason": 2022,
+      "trainingSeasons": [
+        2018,
+        2019
+      ],
+      "selectionSeason": 2021,
+      "cases": 68,
+      "modelId": "9a5973b205a10de437385c868f5ae47ffea3069c1a01a355a3cfb9da7eed1cac"
+    },
+    {
+      "testSeason": 2023,
+      "trainingSeasons": [
+        2018,
+        2019,
+        2021
+      ],
+      "selectionSeason": 2022,
+      "cases": 56,
+      "modelId": "4003a015011439d1c5dd53f1b735789a78c66375f0371388762d2dc5d560a153"
+    },
+    {
+      "testSeason": 2024,
+      "trainingSeasons": [
+        2018,
+        2019,
+        2021,
+        2022
+      ],
+      "selectionSeason": 2023,
+      "cases": 66,
+      "modelId": "39e242d94ee16e10de52d5f7f9ceed22b010f85075025b6cecf692e61d26f636"
+    }
+  ],
+  "allCandidates": {
+    "WR:receiving_yards": {
+      "observations": 892,
+      "games": 177,
+      "baselineMAE": 19.7444636823731,
+      "previousMAE": 19.790873115660766,
+      "candidateMAE": 20.198928021652026
+    },
+    "WR:receptions": {
+      "observations": 892,
+      "games": 177,
+      "baselineMAE": 1.3689938541173141,
+      "previousMAE": 1.3704368212200784,
+      "candidateMAE": 1.392182272105349
+    },
+    "TE:receiving_yards": {
+      "observations": 551,
+      "games": 176,
+      "baselineMAE": 12.929242931722133,
+      "previousMAE": 12.842089307645825,
+      "candidateMAE": 13.275958244341757
+    },
+    "TE:receptions": {
+      "observations": 551,
+      "games": 176,
+      "baselineMAE": 1.0870226792653808,
+      "previousMAE": 1.082163374756969,
+      "candidateMAE": 1.1113865490626647
+    },
+    "QB:passing_yards": {
+      "observations": 440,
+      "games": 177,
+      "baselineMAE": 57.46592091644009,
+      "previousMAE": 55.97009301049301,
+      "candidateMAE": 56.92424779076008
+    },
+    "QB:rushing_yards": {
+      "observations": 440,
+      "games": 177,
+      "baselineMAE": 7.595642292685492,
+      "previousMAE": 7.549274903036581,
+      "candidateMAE": 8.11402010117989
+    },
+    "RB:rushing_yards": {
+      "observations": 546,
+      "games": 176,
+      "baselineMAE": 19.282253719537813,
+      "previousMAE": 19.600963041872344,
+      "candidateMAE": 19.786602215700245
+    },
+    "RB:receiving_yards": {
+      "observations": 546,
+      "games": 176,
+      "baselineMAE": 9.103122867651505,
+      "previousMAE": 9.058313889538999,
+      "candidateMAE": 9.37294579847283
+    },
+    "RB:receptions": {
+      "observations": 546,
+      "games": 176,
+      "baselineMAE": 1.0386953831112506,
+      "previousMAE": 1.0363277753014262,
+      "candidateMAE": 1.062026042472534
+    }
+  },
+  "primaryReplacements": {
+    "QB:passing_yards": {
+      "observations": 22,
+      "games": 21,
+      "baselineMAE": 118.53324242979029,
+      "previousMAE": 88.6166843108485,
+      "candidateMAE": 110.4171645150151
+    },
+    "QB:rushing_yards": {
+      "observations": 22,
+      "games": 21,
+      "baselineMAE": 10.512592582603626,
+      "previousMAE": 9.585244789625438,
+      "candidateMAE": 9.997401487011883
+    },
+    "WR:receiving_yards": {
+      "observations": 81,
+      "games": 77,
+      "baselineMAE": 29.298481687808728,
+      "previousMAE": 29.310243433893543,
+      "candidateMAE": 29.499489656046233
+    },
+    "WR:receptions": {
+      "observations": 81,
+      "games": 77,
+      "baselineMAE": 2.1164885918785044,
+      "previousMAE": 2.116769446125673,
+      "candidateMAE": 2.13269834767452
+    },
+    "TE:receiving_yards": {
+      "observations": 39,
+      "games": 38,
+      "baselineMAE": 21.34355238822353,
+      "previousMAE": 18.636477708754576,
+      "candidateMAE": 19.2742337861417
+    },
+    "TE:receptions": {
+      "observations": 39,
+      "games": 38,
+      "baselineMAE": 2.0277804443260283,
+      "previousMAE": 1.744045846955981,
+      "candidateMAE": 1.8385458706153464
+    },
+    "RB:rushing_yards": {
+      "observations": 46,
+      "games": 46,
+      "baselineMAE": 21.798257357541413,
+      "previousMAE": 25.683378720199517,
+      "candidateMAE": 25.338046368675805
+    },
+    "RB:receiving_yards": {
+      "observations": 46,
+      "games": 46,
+      "baselineMAE": 11.89845791042223,
+      "previousMAE": 11.784671345838698,
+      "candidateMAE": 12.060092025763595
+    },
+    "RB:receptions": {
+      "observations": 46,
+      "games": 46,
+      "baselineMAE": 1.4313432740415213,
+      "previousMAE": 1.397729126207936,
+      "candidateMAE": 1.440854070641829
+    }
+  },
+  "ledgerSHA256": "94fb6f6d1a081925a97d8f55c634608d2b49692f2faea91609ecb50f1f472969",
+  "promoted": false,
+  "reason": "No untouched outcome test or priced probability validation. Original model retained as default; candidate is selectable for research and frozen prospectively separately."
+}

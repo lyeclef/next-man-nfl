@@ -1,0 +1,28 @@
+{
+  "handoffDate": "2026-10-20",
+  "localVersion": "0.4.0",
+  "localChangesDeployed": false,
+  "lastConfirmedPublishedCommit": "836a95ac48df4dc8af0f370f53913e4af4db7a07",
+  "build": "passed",
+  "softwareTests": { "passed": 46, "failed": 0 },
+  "newInterfaceFullBrowserQA": "pending",
+  "predictiveValidation": "not_passed",
+  "approvedBettingMarkets": [],
+  "connectedSportsbookAccount": false,
+  "currentVerifiedCases": 1,
+  "currentVerifiedCaseForecasts": 20,
+  "injuryWatchListings": 65,
+  "injuryFeedTeamsObserved": 32,
+  "conditionalCases": 4,
+  "conditionalForecasts": 84,
+  "historicalTestCases": 190,
+  "historicalMarketObservations": 5404,
+  "prospectiveModelForecasts": 40,
+  "prospectiveGradedGames": 0,
+  "notes": [
+    "Archive records the latest local work, including additions made before the owner requested the handoff.",
+    "Candidate model is research only and has not replaced the original default.",
+    "Included source snapshots are historical captures, not a live data service.",
+    "Archive manifest fingerprints files; software test success does not establish a betting edge."
+  ]
+}

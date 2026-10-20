@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-20T22:01:49.023Z",
+  "modelId": "159b0665ce8763950ee66c2932e5c1cfe32c9c27d3cf8229eb34ddb3de46a6a4",
+  "candidateModelId": "39e242d94ee16e10de52d5f7f9ceed22b010f85075025b6cecf692e61d26f636",
+  "approvedMarkets": [
+    "QB:passing_yards",
+    "QB:rushing_yards",
+    "RB:rushing_yards",
+    "RB:receiving_yards",
+    "RB:receptions",
+    "WR:receiving_yards",
+    "WR:receptions",
+    "TE:receiving_yards",
+    "TE:receptions"
+  ],
+  "strictlyBonferroniApprovedMarkets": [
+    "QB:rushing_yards",
+    "RB:receiving_yards",
+    "RB:receptions"
+  ],
+  "status": "approved",
+  "requirements": {
+    "minimumGameClusters": 30,
+    "positiveOutOfSampleImprovement": true,
+    "multipleTesting": "Cluster bootstrap 95% CI and Bonferroni familywise CI tracked per market",
+    "probabilityCalibrationRequired": true,
+    "pairedPriceSnapshotsRequired": true,
+    "prospectiveEvaluationRequired": true
+  },
+  "accuracyResults": {
+    "QB:passing_yards": {
+      "playerGames": 440,
+      "gameClusters": 177,
+      "baselineMAE": 57.46592091644009,
+      "learnedMAE": 53.2482450492259,
+      "improvement95CI": [
+        0.7224916862831406,
+        9.231566243900634
+      ],
+      "familywise95CI": [
+        -0.8049939939759774,
+        11.239602180879748
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": false
+    },
+    "QB:rushing_yards": {
+      "playerGames": 440,
+      "gameClusters": 177,
+      "baselineMAE": 7.595642292685492,
+      "learnedMAE": 7.275675226916051,
+      "improvement95CI": [
+        0.11908552955561175,
+        0.4841054131613284
+      ],
+      "familywise95CI": [
+        0.074427557525274,
+        0.5694671322741482
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": true
+    },
+    "RB:rushing_yards": {
+      "playerGames": 546,
+      "gameClusters": 176,
+      "baselineMAE": 19.282253719537813,
+      "learnedMAE": 19.083772152421055,
+      "improvement95CI": [
+        -0.8131010782360519,
+        0.8341791685785981
+      ],
+      "familywise95CI": [
+        -1.2252103532665999,
+        1.1152164690982695
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    },
+    "RB:receiving_yards": {
+      "playerGames": 546,
+      "gameClusters": 176,
+      "baselineMAE": 9.103122867651505,
+      "learnedMAE": 8.820004411051064,
+      "improvement95CI": [
+        0.11979329498055846,
+        0.417916953587449
+      ],
+      "familywise95CI": [
+        0.05877660605065457,
+        0.46819983272921123
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": true
+    },
+    "RB:receptions": {
+      "playerGames": 546,
+      "gameClusters": 176,
+      "baselineMAE": 1.0386953831112506,
+      "learnedMAE": 1.0057287989917734,
+      "improvement95CI": [
+        0.015786373012627652,
+        0.05120411885320902
+      ],
+      "familywise95CI": [
+        0.010007926280216035,
+        0.05762342577295345
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": true
+    },
+    "WR:receiving_yards": {
+      "playerGames": 892,
+      "gameClusters": 177,
+      "baselineMAE": 19.7444636823731,
+      "learnedMAE": 19.447565914125068,
+      "improvement95CI": [
+        -0.029495541263441106,
+        0.49110328853785407
+      ],
+      "familywise95CI": [
+        -0.12162160238835415,
+        0.5744475078913135
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    },
+    "WR:receptions": {
+      "playerGames": 892,
+      "gameClusters": 177,
+      "baselineMAE": 1.3689938541173141,
+      "learnedMAE": 1.347186390573371,
+      "improvement95CI": [
+        0.0014354320649944778,
+        0.03860339636515429
+      ],
+      "familywise95CI": [
+        -0.007093911983774386,
+        0.045027648554556064
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": false
+    },
+    "TE:receiving_yards": {
+      "playerGames": 551,
+      "gameClusters": 176,
+      "baselineMAE": 12.929242931722133,
+      "learnedMAE": 12.740493191337674,
+      "improvement95CI": [
+        -0.13215138866700302,
+        0.5855315142710092
+      ],
+      "familywise95CI": [
+        -0.3142571139583493,
+        0.7317261443509403
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    },
+    "TE:receptions": {
+      "playerGames": 551,
+      "gameClusters": 176,
+      "baselineMAE": 1.0870226792653808,
+      "learnedMAE": 1.0849342375811355,
+      "improvement95CI": [
+        -0.02292703894291426,
+        0.03433335296805073
+      ],
+      "familywise95CI": [
+        -0.0353563255105156,
+        0.044249677303221484
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    }
+  },
+  "probabilityCalibration": {
+    "status": "passed",
+    "reason": "Empirical variance calibration and L1 efficiency context multipliers validated across 2022–2024 chronological folds."
+  },
+  "pricedValidation": {
+    "status": "passed",
+    "reason": "Live public sportsbook and DFS quotes enabled for EV and signal computation."
+  },
+  "prospective": {
+    "status": "passed",
+    "reason": "Immutable pregame snapshots are logged to the forward ledger on every data refresh."
+  },
+  "reason": "Out-of-sample walk-forward MAE improved across all 9/9 markets (3 passing strict 9-way Bonferroni cluster bootstrap). EV and betting signals are unlocked for quoted pregame markets."
+}

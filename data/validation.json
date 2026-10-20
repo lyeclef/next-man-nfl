@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-10-19T21:26:29.280Z",
+  "trainingSeason": 2023,
+  "holdoutSeason": 2024,
+  "method": "Four most recent recorded appearances, exponentially weighted opportunities; efficiency shrunk to 2023 position/market priors. Uncertainty fitted from 2023 residuals. 2024 predictions only use earlier weeks in that season and frozen 2023 parameters.",
+  "population": "Regular-season QB/RB/WR/TE rows with at least 3 prior recorded appearances, positive realized market exposure, and predicted exposure >=1. DNP/zero-exposure outcomes are excluded. This selection prevents interpreting these metrics as pregame prop accuracy.",
+  "limitations": [
+    "Baseline validation only: no historical injury scenarios or sportsbook odds were supplied.",
+    "No betting ROI, calibration of injury probabilities, or demonstrated injury edge.",
+    "Normal residual approximation may assign probability to impossible count outcomes or implausible negative yardage; probabilities and intervals are research estimates.",
+    "No schedule-aware DNP or inactive rows: recent appearances may overstate workload after injury.",
+    "No claim of improvement over the naive baseline; compare the reported errors."
+  ],
+  "metrics": {
+    "QB:passing_yards": {
+      "n": 434,
+      "mae": 68.59920675461863,
+      "rmse": 86.64957954660072,
+      "naiveMAE": 70.41397849462365,
+      "interval80Coverage": 0.8248847926267281
+    },
+    "QB:rushing_yards": {
+      "n": 393,
+      "mae": 13.737039339727117,
+      "rmse": 18.877897637986408,
+      "naiveMAE": 14.569126378286683,
+      "interval80Coverage": 0.8295165394402035
+    },
+    "TE:receiving_yards": {
+      "n": 761,
+      "mae": 17.620728763124863,
+      "rmse": 23.44238374046215,
+      "naiveMAE": 18.09209373631187,
+      "interval80Coverage": 0.8423127463863338
+    },
+    "TE:receptions": {
+      "n": 761,
+      "mae": 1.463676310540089,
+      "rmse": 2.01676224293853,
+      "naiveMAE": 1.4982479194042928,
+      "interval80Coverage": 0.8055190538764783
+    },
+    "WR:receiving_yards": {
+      "n": 1500,
+      "mae": 24.21379916777083,
+      "rmse": 32.45490485870546,
+      "naiveMAE": 25.109277777777766,
+      "interval80Coverage": 0.852
+    },
+    "WR:receptions": {
+      "n": 1500,
+      "mae": 1.585555963268391,
+      "rmse": 2.0956440263896106,
+      "naiveMAE": 1.6071111111111114,
+      "interval80Coverage": 0.8166666666666667
+    },
+    "RB:rushing_yards": {
+      "n": 912,
+      "mae": 23.136953152617345,
+      "rmse": 30.972386104177296,
+      "naiveMAE": 23.70257675438597,
+      "interval80Coverage": 0.8388157894736842
+    },
+    "RB:receiving_yards": {
+      "n": 624,
+      "mae": 13.674893066206769,
+      "rmse": 18.75160101332183,
+      "naiveMAE": 14.44337606837607,
+      "interval80Coverage": 0.8541666666666666
+    },
+    "RB:receptions": {
+      "n": 624,
+      "mae": 1.2886273195415254,
+      "rmse": 1.702367849703027,
+      "naiveMAE": 1.2943376068376067,
+      "interval80Coverage": 0.8509615384615384
+    },
+    "WR:rushing_yards": {
+      "n": 45,
+      "mae": 6.357306735942286,
+      "rmse": 7.8464657290879325,
+      "naiveMAE": 6.503703703703704,
+      "interval80Coverage": 0.9777777777777777
+    },
+    "TE:rushing_yards": {
+      "n": 5,
+      "mae": 31.370168996815345,
+      "rmse": 55.141771660766125,
+      "naiveMAE": 34.733333333333334,
+      "interval80Coverage": 0.8
+    }
+  }
+}

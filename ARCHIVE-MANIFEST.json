@@ -1,0 +1,671 @@
+{
+  "createdAt": "2026-10-20T18:10:25.790682+00:00",
+  "project": "Next Man NFL Pregame Injury Model",
+  "version": "0.4.0 local handoff; not deployed",
+  "lastPublishedSourceCommit": "836a95ac48df4dc8af0f370f53913e4af4db7a07",
+  "modelReadiness": "Not predictively validated; no approved betting markets",
+  "excluded": [
+    "Git internals",
+    "credentials and actual environment files",
+    "machine runtime state",
+    "prior release archives",
+    "disposable test and smoke outputs"
+  ],
+  "files": [
+    {
+      "path": ".cache/candidate/locked-protocol.json",
+      "bytes": 1288,
+      "sha256": "8ad5e2602d5384ad918b2aaf1b177d8971136a7619830b4807ae5bc1ef9fa6e0"
+    },
+    {
+      "path": ".cache/candidate/model-2022.json",
+      "bytes": 5027,
+      "sha256": "5dd86459746945cd55038df6b745f3babba356c58b93e76081916c8c5f17d199"
+    },
+    {
+      "path": ".cache/candidate/model-2023.json",
+      "bytes": 6185,
+      "sha256": "b14447df682bb46ac98bcd6231b7b975c7051b6e20b58e167f1f69c3fc3b7366"
+    },
+    {
+      "path": ".cache/candidate/model-2024.json",
+      "bytes": 6193,
+      "sha256": "273161a0687228925132be56af185a7e422eecafd059623ef4e6924191cf8feb"
+    },
+    {
+      "path": ".cache/candidate/predictions.json",
+      "bytes": 1832468,
+      "sha256": "0b2ec20a8e3e3b7e4ddcd7522e69d0cc1bce6bceba87fe390a3ccf44d0238836"
+    },
+    {
+      "path": ".cache/forward-ledger/5368498faa75c0c64bdf2313c418d7b28eb9794fc4c5504f304187aee6522510.json",
+      "bytes": 71943,
+      "sha256": "5368498faa75c0c64bdf2313c418d7b28eb9794fc4c5504f304187aee6522510"
+    },
+    {
+      "path": ".cache/forward-ledger/7c9ea4fa6f91665b1f7b971db52b777fd364475e8760e393ca134d4ae9e265d0.json",
+      "bytes": 72589,
+      "sha256": "7c9ea4fa6f91665b1f7b971db52b777fd364475e8760e393ca134d4ae9e265d0"
+    },
+    {
+      "path": ".cache/forward-ledger/c10a77569aa73b3c769730d8cecdb67d9c22431dcd1d3f15b4acf83935c4fefb.json",
+      "bytes": 74274,
+      "sha256": "c10a77569aa73b3c769730d8cecdb67d9c22431dcd1d3f15b4acf83935c4fefb"
+    },
+    {
+      "path": ".cache/forward-ledger/c7f2d45cbace3b061ff8002ac9cc438d689a165d446d95df46bfae011bae57b9.json",
+      "bytes": 74274,
+      "sha256": "c7f2d45cbace3b061ff8002ac9cc438d689a165d446d95df46bfae011bae57b9"
+    },
+    {
+      "path": ".cache/injury-history/depth_2018.csv",
+      "bytes": 3365843,
+      "sha256": "2c44efb1d96f8b8fef8a8ae42c44db340e97921745420d96b012778e184255bb"
+    },
+    {
+      "path": ".cache/injury-history/depth_2019.csv",
+      "bytes": 3335603,
+      "sha256": "328405d1feb09cc4b23922c26bf23adf7d6a6e894ba0e7305b88dda793710647"
+    },
+    {
+      "path": ".cache/injury-history/depth_2021.csv",
+      "bytes": 3447809,
+      "sha256": "91e3384ff13146c77f02fed2c3eca163d35868dd62da6b794c5b51df1d15b724"
+    },
+    {
+      "path": ".cache/injury-history/depth_2022.csv",
+      "bytes": 3467936,
+      "sha256": "4c64ee59666431c49cbc0a818cc3165886012cf72b545771a77c0805aa621b9c"
+    },
+    {
+      "path": ".cache/injury-history/depth_2023.csv",
+      "bytes": 3426502,
+      "sha256": "583f83842590e7e7d3417e0cd9c5c9e38f8696353bb754561d80e5583d2a98cf"
+    },
+    {
+      "path": ".cache/injury-history/depth_2024.csv",
+      "bytes": 3391616,
+      "sha256": "f210a33774611f7f78a89af789b61c6289a2631a21227a1a3c63c973c23588b7"
+    },
+    {
+      "path": ".cache/injury-history/events-2022.json",
+      "bytes": 1590135,
+      "sha256": "c140181fe8b417a3dabfd1b5cf992f34bd4b9400a7c267c7fbdf8134fc407d94"
+    },
+    {
+      "path": ".cache/injury-history/events-2023.json",
+      "bytes": 2014742,
+      "sha256": "976e59f4e4c11d174f822f9a0b82f54f9c4272755c466b8c68da21cdff4557b6"
+    },
+    {
+      "path": ".cache/injury-history/events-2024.json",
+      "bytes": 2510584,
+      "sha256": "bde3dbaf341f75c356ec5823b4172785ebc31ed0186f5c1ac05e5e375cc1cc7d"
+    },
+    {
+      "path": ".cache/injury-history/events.json",
+      "bytes": 2510584,
+      "sha256": "bde3dbaf341f75c356ec5823b4172785ebc31ed0186f5c1ac05e5e375cc1cc7d"
+    },
+    {
+      "path": ".cache/injury-history/games_all.csv",
+      "bytes": 2185307,
+      "sha256": "131ca64f24d1f4389c22003241f9e474ba19da362fa37ae9fdd7e664ae0dcb87"
+    },
+    {
+      "path": ".cache/injury-history/injuries_2018.csv",
+      "bytes": 665119,
+      "sha256": "4724e1f37cc3076f564e997fbf269190e7dbe795a39315b903788e0a9c40065e"
+    },
+    {
+      "path": ".cache/injury-history/injuries_2019.csv",
+      "bytes": 700757,
+      "sha256": "daddfe8e04ddc3a29bce14f362e774fbadfb274c807f1f0fde7b5bf32aaf6cdf"
+    },
+    {
+      "path": ".cache/injury-history/injuries_2021.csv",
+      "bytes": 737083,
+      "sha256": "1049fb9ff0fe7cfcf3ba8bfe1f5a35d3aba985c461c8fb7bf5201735b6d34254"
+    },
+    {
+      "path": ".cache/injury-history/injuries_2022.csv",
+      "bytes": 752433,
+      "sha256": "5f0d60324e597edd1a2ced8540b04e40b51dd440591dd1df11b8d96343387c9e"
+    },
+    {
+      "path": ".cache/injury-history/injuries_2023.csv",
+      "bytes": 738501,
+      "sha256": "16b04e21da5aa3944cfa9c22cafcc84ed7e6d9866eaddf0344e9b8cbf2f63afe"
+    },
+    {
+      "path": ".cache/injury-history/injuries_2024.csv",
+      "bytes": 816989,
+      "sha256": "498bce8e13cb64b2ab9bb0ad6cb81d0a63c2ddb24016c9fc90c2de2126fae449"
+    },
+    {
+      "path": ".cache/injury-history/manifest.json",
+      "bytes": 5864,
+      "sha256": "77be16204bc1ad207f6963eb62e4128d941c1bf6e32ade491804ef1fe3f961e1"
+    },
+    {
+      "path": ".cache/injury-history/sources.json",
+      "bytes": 4859,
+      "sha256": "55b0879eab4c61151341d817a3bfb01453c4bf45abc8f85fbe32e9252f9e0c61"
+    },
+    {
+      "path": ".cache/injury-history/stats_2018.csv",
+      "bytes": 1589146,
+      "sha256": "78cf79337e6e203c0fcc23004f5c1e9c1b6ee79ad66e17559ae76cd7082251b0"
+    },
+    {
+      "path": ".cache/injury-history/stats_2019.csv",
+      "bytes": 1580008,
+      "sha256": "b1338e5f364cd385f75aecf15fec69be02d075f5545749ecb4bcbc351e09718a"
+    },
+    {
+      "path": ".cache/injury-history/stats_2021.csv",
+      "bytes": 1712336,
+      "sha256": "41ff0aafb569b5d47836168bdd755a8dcac4581d40dc42efe2f7821a341e903a"
+    },
+    {
+      "path": ".cache/injury-history/stats_2022.csv",
+      "bytes": 1689929,
+      "sha256": "42f3a4da856546bd9606dde29eecf54e8dbbd6627264bbd8e153dd34ecd0e535"
+    },
+    {
+      "path": ".cache/injury-history/stats_2023.csv",
+      "bytes": 1695570,
+      "sha256": "fc731277c81c7ee25fb6af50cebd29a2adf3f8aadddeec1c485231aa9f98bdcc"
+    },
+    {
+      "path": ".cache/injury-history/stats_2024.csv",
+      "bytes": 1674023,
+      "sha256": "4f1598c9a6ba396a52e256762a0d9148abd22cdf856f26fc8825fa1d1dc49631"
+    },
+    {
+      "path": ".cache/player_stats_2023.csv",
+      "bytes": 1695570,
+      "sha256": "fc731277c81c7ee25fb6af50cebd29a2adf3f8aadddeec1c485231aa9f98bdcc"
+    },
+    {
+      "path": ".cache/player_stats_2024.csv",
+      "bytes": 1674023,
+      "sha256": "4f1598c9a6ba396a52e256762a0d9148abd22cdf856f26fc8825fa1d1dc49631"
+    },
+    {
+      "path": ".cache/real-data/depth_2026.csv",
+      "bytes": 64570223,
+      "sha256": "263cddf0432e3afa1bffbdbb11d5ffa3e624bed2fe65d1fd1c6e13eeff890b19"
+    },
+    {
+      "path": ".cache/real-data/espn-injuries.json",
+      "bytes": 8693953,
+      "sha256": "44b7784158e32b6edb7845a1d27b41f17e13084b8ebb3b6a00e79cd81e14c61f"
+    },
+    {
+      "path": ".cache/real-data/games_2026.csv",
+      "bytes": 2185697,
+      "sha256": "06ef299b43e59547cde4c7b45e90f5590ff7d709b5bc6ca4852d47ca8e1d79fe"
+    },
+    {
+      "path": ".cache/real-data/injuries_2026.csv",
+      "bytes": 204576,
+      "sha256": "b51b2ca4e3f6f40b8a53fc00b6689ab1d7c561d546a7cb1900dd74ee675e9286"
+    },
+    {
+      "path": ".cache/real-data/stats_2026.csv",
+      "bytes": 2888889,
+      "sha256": "0d29a199ddecacca64e6290cbb12f68823d05ef271de0f6a3aa768efd60fad76"
+    },
+    {
+      "path": ".cache/validation/predictions.json",
+      "bytes": 1315836,
+      "sha256": "97cca04dd7505c8dd228e90773f4a2cccb3596e28d5624a3eab27c0eb827d89b"
+    },
+    {
+      "path": ".cache/walk-forward/2022/injury-model.json",
+      "bytes": 4058,
+      "sha256": "7c7e2c85e490b51caacf7f06eade88a90a7e4ccbc0d17369273d67c72af80fb4"
+    },
+    {
+      "path": ".cache/walk-forward/2022/injury-validation.json",
+      "bytes": 68533,
+      "sha256": "1a11f22cd62d95dba3ec3ceca4a0880592fe67559da8a3c2a4378e96ec1f5f5c"
+    },
+    {
+      "path": ".cache/walk-forward/2022/prediction-ledger.json",
+      "bytes": 483757,
+      "sha256": "fd89df5e7f2299b5850ae6e99464ac727c6b66b9a4edb28f8fbb34ee2786c4b5"
+    },
+    {
+      "path": ".cache/walk-forward/2023/injury-model.json",
+      "bytes": 6137,
+      "sha256": "38e99ab44acebbcee16ed44718102d00546aa9852a347ce3bffd36bdb666faa7"
+    },
+    {
+      "path": ".cache/walk-forward/2023/injury-validation.json",
+      "bytes": 72289,
+      "sha256": "79833a5e478424204103c2898192a45017472ac628628cc564171e486ed211fe"
+    },
+    {
+      "path": ".cache/walk-forward/2023/prediction-ledger.json",
+      "bytes": 389118,
+      "sha256": "05aaf4456784d73908f257a6bc648aecdf737ecc94aa972d159e9ddd9912dc59"
+    },
+    {
+      "path": ".cache/walk-forward/2024/injury-model.json",
+      "bytes": 7379,
+      "sha256": "e275adb4f1ee3f87e9aa04801711d293682f715343b83387a8a3878c305998a0"
+    },
+    {
+      "path": ".cache/walk-forward/2024/injury-validation.json",
+      "bytes": 74491,
+      "sha256": "2bce2f25d06b4c4cadea2cd092734986018f101dccee2c613a3a12ad824dda16"
+    },
+    {
+      "path": ".cache/walk-forward/2024/prediction-ledger.json",
+      "bytes": 442963,
+      "sha256": "dc07b3dac7f0f7d4ed775c168cac42cf3c78fa9a15d5d6217759fa0e5ec77906"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 158,
+      "sha256": "5ff68a5cb97d6d812b7b0ade494de792e68cfdbff66082eaca4e763f557d5754"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 91,
+      "sha256": "452ad0770d4e3bdbe48daa7c6cd51cd2b1ff6c2e74b90c5ecab74e73eee14385"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 106,
+      "sha256": "f6c40fb4759cb7bd14c56106fe8779494d86fc497f1ed91010d4de794ff69788"
+    },
+    {
+      "path": "data/calibration.json",
+      "bytes": 2924,
+      "sha256": "ed2c06754ccb5422242d5c9749594707858ab54b2a0c211f22df539776d4e2f1"
+    },
+    {
+      "path": "data/candidate-model.json",
+      "bytes": 6193,
+      "sha256": "273161a0687228925132be56af185a7e422eecafd059623ef4e6924191cf8feb"
+    },
+    {
+      "path": "data/candidate-validation.json",
+      "bytes": 6155,
+      "sha256": "83b35eff908d0b2cec346593d785359e4605a944d7b46f57bcf76d292afe0b47"
+    },
+    {
+      "path": "data/conditional-slate.json",
+      "bytes": 96186,
+      "sha256": "e9530bedf56029fc983c9d7d8ee3f85168f41e8d03b275bd51498f825caae57a"
+    },
+    {
+      "path": "data/current-slate.json",
+      "bytes": 23904,
+      "sha256": "68f152ee6935a772cce9583cf464d38e50548adf673ef41d3811911df5f287b9"
+    },
+    {
+      "path": "data/forward-status.json",
+      "bytes": 1115,
+      "sha256": "36b260a48575242f54a3ab6cfc9366f92fc1831f936ce02962fee18e3647427c"
+    },
+    {
+      "path": "data/historical-slate.json",
+      "bytes": 1863709,
+      "sha256": "ebb06bf1827d7a276fafa1d306803fd9547b80aeca7c6b5000652e1dca3e3163"
+    },
+    {
+      "path": "data/injury-model.json",
+      "bytes": 7379,
+      "sha256": "8f63a7a1ba2fce78e9fbfcfb41bc3c0521b1e1588c9a3536c216fcdec86fad7b"
+    },
+    {
+      "path": "data/injury-validation.json",
+      "bytes": 74491,
+      "sha256": "73b22732d6fc86489feed0fc360f90365ada502641d133c079ae456118c4d227"
+    },
+    {
+      "path": "data/injury-watchlist.json",
+      "bytes": 57008,
+      "sha256": "aecb13ec50bfeec9040f3bd26c4a611ae93ebbea18fde3903fb58100b6ed2287"
+    },
+    {
+      "path": "data/source-status.json",
+      "bytes": 2555,
+      "sha256": "0e55ec0fc28ff989a128789b460fc3a22b1c0fcccb9a1b8215b23a0c181a9f93"
+    },
+    {
+      "path": "data/validation-policy.json",
+      "bytes": 4285,
+      "sha256": "0dcd5d31f67614aa97c029eb339c2225f3d7e38c5d729a63859d9ce217601db0"
+    },
+    {
+      "path": "data/validation.json",
+      "bytes": 3393,
+      "sha256": "518f51cd7d59e34c0c05aa7c3bce740e6b76bea1702804029bcd343ab2f05e4a"
+    },
+    {
+      "path": "data/verified-injuries.json",
+      "bytes": 785,
+      "sha256": "67763be8692b0b0afe27d1a883ebcddb4c058106318fa9d1208dc813631bf2e4"
+    },
+    {
+      "path": "data/walk-forward-validation.json",
+      "bytes": 14980,
+      "sha256": "fbd9689fbaa18c27bf323e87799ba989db09ad37fb1bb39b37c35108ac317027"
+    },
+    {
+      "path": "dist/app.mjs",
+      "bytes": 26766,
+      "sha256": "92df8b8d81e41b731c7c0054dcca8976b4822047845fae3ac09c7b40aa42b86c"
+    },
+    {
+      "path": "dist/data/calibration.json",
+      "bytes": 2924,
+      "sha256": "ed2c06754ccb5422242d5c9749594707858ab54b2a0c211f22df539776d4e2f1"
+    },
+    {
+      "path": "dist/data/candidate-model.json",
+      "bytes": 6193,
+      "sha256": "273161a0687228925132be56af185a7e422eecafd059623ef4e6924191cf8feb"
+    },
+    {
+      "path": "dist/data/candidate-validation.json",
+      "bytes": 6155,
+      "sha256": "83b35eff908d0b2cec346593d785359e4605a944d7b46f57bcf76d292afe0b47"
+    },
+    {
+      "path": "dist/data/conditional-slate.json",
+      "bytes": 96186,
+      "sha256": "e9530bedf56029fc983c9d7d8ee3f85168f41e8d03b275bd51498f825caae57a"
+    },
+    {
+      "path": "dist/data/current-slate.json",
+      "bytes": 23904,
+      "sha256": "68f152ee6935a772cce9583cf464d38e50548adf673ef41d3811911df5f287b9"
+    },
+    {
+      "path": "dist/data/forward-status.json",
+      "bytes": 1115,
+      "sha256": "36b260a48575242f54a3ab6cfc9366f92fc1831f936ce02962fee18e3647427c"
+    },
+    {
+      "path": "dist/data/historical-slate.json",
+      "bytes": 1863709,
+      "sha256": "ebb06bf1827d7a276fafa1d306803fd9547b80aeca7c6b5000652e1dca3e3163"
+    },
+    {
+      "path": "dist/data/injury-model.json",
+      "bytes": 7379,
+      "sha256": "8f63a7a1ba2fce78e9fbfcfb41bc3c0521b1e1588c9a3536c216fcdec86fad7b"
+    },
+    {
+      "path": "dist/data/injury-validation.json",
+      "bytes": 74491,
+      "sha256": "73b22732d6fc86489feed0fc360f90365ada502641d133c079ae456118c4d227"
+    },
+    {
+      "path": "dist/data/injury-watchlist.json",
+      "bytes": 57008,
+      "sha256": "aecb13ec50bfeec9040f3bd26c4a611ae93ebbea18fde3903fb58100b6ed2287"
+    },
+    {
+      "path": "dist/data/source-status.json",
+      "bytes": 2555,
+      "sha256": "0e55ec0fc28ff989a128789b460fc3a22b1c0fcccb9a1b8215b23a0c181a9f93"
+    },
+    {
+      "path": "dist/data/validation-policy.json",
+      "bytes": 4285,
+      "sha256": "0dcd5d31f67614aa97c029eb339c2225f3d7e38c5d729a63859d9ce217601db0"
+    },
+    {
+      "path": "dist/data/walk-forward-validation.json",
+      "bytes": 14980,
+      "sha256": "fbd9689fbaa18c27bf323e87799ba989db09ad37fb1bb39b37c35108ac317027"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 12144,
+      "sha256": "1bee37db30ecd18d6719e1fd973f57d1e44674be146a7a1a68e442337b062021"
+    },
+    {
+      "path": "dist/lib/csv.mjs",
+      "bytes": 1196,
+      "sha256": "c08564915ec53cb9006a7c735ee43d6493908070f94293857c35987aab8a53ca"
+    },
+    {
+      "path": "dist/lib/injury-impact.mjs",
+      "bytes": 5771,
+      "sha256": "5e247fdd68f4d6299f3a16c15c3a86550148a2399626b241bbaf6421541708c4"
+    },
+    {
+      "path": "dist/lib/model.mjs",
+      "bytes": 19596,
+      "sha256": "6e01cb44f66ba7074bf8acf1c315f493627e38a4d96ade3892c8d93ec65552fa"
+    },
+    {
+      "path": "dist/lib/quote-csv.mjs",
+      "bytes": 3068,
+      "sha256": "f3c4d54e5dcdff7606da0c6cec6594820cd6e85514245578ecd133e9fa53ab5e"
+    },
+    {
+      "path": "dist/styles.css",
+      "bytes": 16989,
+      "sha256": "98bb2a0b65a84e021c6538ad2f3e743771038c068d1253a09d2ec77bfb73c222"
+    },
+    {
+      "path": "docs/handoff-status.json",
+      "bytes": 1111,
+      "sha256": "114834746bfc77678dce1bcf9ffe97eb0e1b74375b5fc375d20dff73effd261d"
+    },
+    {
+      "path": "docs/implementation-notes-v03.md",
+      "bytes": 10279,
+      "sha256": "990bb51e01cf2399ba168b7802913edc58ebf0b2a276cbcc6d5ec1aa21a435e0"
+    },
+    {
+      "path": "lib/csv.mjs",
+      "bytes": 1196,
+      "sha256": "c08564915ec53cb9006a7c735ee43d6493908070f94293857c35987aab8a53ca"
+    },
+    {
+      "path": "lib/forward-validation.mjs",
+      "bytes": 623,
+      "sha256": "5e82290081feaf6684ade78b5498a8f8d54a2c410d359fd329e6f01c60512d69"
+    },
+    {
+      "path": "lib/injury-history.mjs",
+      "bytes": 7740,
+      "sha256": "5550d4e35d44cc9c453e3a06bed259372386d33ec4714b1457e2aeab567df34d"
+    },
+    {
+      "path": "lib/injury-impact.mjs",
+      "bytes": 5771,
+      "sha256": "5e247fdd68f4d6299f3a16c15c3a86550148a2399626b241bbaf6421541708c4"
+    },
+    {
+      "path": "lib/injury-watch.mjs",
+      "bytes": 2815,
+      "sha256": "cd044ad8320aca3e49528c8a6bc9f622a1a5a3b0c9a5f2520b71749fd986927e"
+    },
+    {
+      "path": "lib/model.mjs",
+      "bytes": 19596,
+      "sha256": "6e01cb44f66ba7074bf8acf1c315f493627e38a4d96ade3892c8d93ec65552fa"
+    },
+    {
+      "path": "lib/odds-import.mjs",
+      "bytes": 2468,
+      "sha256": "4d035543e038f3fc8f2b830a877ad761500533b411ba7c121fb8418ec701b66b"
+    },
+    {
+      "path": "lib/quote-csv.mjs",
+      "bytes": 3068,
+      "sha256": "f3c4d54e5dcdff7606da0c6cec6594820cd6e85514245578ecd133e9fa53ab5e"
+    },
+    {
+      "path": "lib/real-data.mjs",
+      "bytes": 7111,
+      "sha256": "ce25c9b0c236bb46076f6cc19ea9ee11baf6f581ed8a33c7e7b5b71196d49825"
+    },
+    {
+      "path": "package.json",
+      "bytes": 776,
+      "sha256": "409ee6004bee915f238106d5645dde1036a153d78f1b59803edc420e5bdcc394"
+    },
+    {
+      "path": "public/app.mjs",
+      "bytes": 26766,
+      "sha256": "92df8b8d81e41b731c7c0054dcca8976b4822047845fae3ac09c7b40aa42b86c"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 12144,
+      "sha256": "1bee37db30ecd18d6719e1fd973f57d1e44674be146a7a1a68e442337b062021"
+    },
+    {
+      "path": "public/styles.css",
+      "bytes": 16989,
+      "sha256": "98bb2a0b65a84e021c6538ad2f3e743771038c068d1253a09d2ec77bfb73c222"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20092,
+      "sha256": "0a4f5cdecc5bb4f9b766291d8b5c8039a02888dd7f7f33b9e35275f269e895fe"
+    },
+    {
+      "path": "reports/candidate-evaluation.md",
+      "bytes": 980,
+      "sha256": "0de8969d623c19981e4f1f19ced6a6ede17c70c093bd04cfb534df5ceed10efd"
+    },
+    {
+      "path": "reports/forward-predictions.json",
+      "bytes": 1210,
+      "sha256": "016ee2c1a5559ed97c35ec5b64a8c6c2ae3157938e7af2a380fd71812fa9efa1"
+    },
+    {
+      "path": "reports/injury-evaluation.md",
+      "bytes": 3483,
+      "sha256": "a8c3a5db070d5ee27d6c98c31bffbd3d099faf0b4bd0ceb92b0aa03ece4ee3a6"
+    },
+    {
+      "path": "reports/real-data-validation.md",
+      "bytes": 3081,
+      "sha256": "ca025850d26fd48d370e47f86b4723e7d319c446fcd9d11479ce73301cadb186"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 2118,
+      "sha256": "621acdbcb441baf395b4976c31c342a09c80a01a1bbac40beb1babf3e876a802"
+    },
+    {
+      "path": "scripts/evaluate-forward.mjs",
+      "bytes": 4057,
+      "sha256": "a8f2cdb500130f6b443fe7f1d35dd3183988d94f996902bf500ffe2bf5928157"
+    },
+    {
+      "path": "scripts/fetch-odds.mjs",
+      "bytes": 1993,
+      "sha256": "755971c161504a17605b29f62ca3eb6288fa0c4523e251138f460d0fc655842f"
+    },
+    {
+      "path": "scripts/import-odds.mjs",
+      "bytes": 908,
+      "sha256": "c677d5c4ecb90d7c12f0ea57e6bd7b40a56ad8a889b16645320d9a499f878dd7"
+    },
+    {
+      "path": "scripts/package-project.py",
+      "bytes": 2951,
+      "sha256": "109168b72c776a31c7ca6d7d652b13546ccdda36f48c3e92b6732c957e370f8c"
+    },
+    {
+      "path": "scripts/prepare-injury-slate.mjs",
+      "bytes": 5441,
+      "sha256": "a571a884ace5f935380c033782088abb706741d6fde96b3b69628e09913c4d83"
+    },
+    {
+      "path": "scripts/prepare.mjs",
+      "bytes": 2673,
+      "sha256": "f3837bdb0c77bfd2aa862bd77bdad6df7d3217f031073eb47c2f5b3d45385025"
+    },
+    {
+      "path": "scripts/project.mjs",
+      "bytes": 1561,
+      "sha256": "a5e125d0906f8191ef9a55c5b8581115542d631eee83c5eaf9a4396a11790d3d"
+    },
+    {
+      "path": "scripts/refresh-real-data.mjs",
+      "bytes": 10529,
+      "sha256": "59a94841f6d02f06a60b6a075b0a5ee1ff9e0f5f3c721bd8a2c1e1508a2c40da"
+    },
+    {
+      "path": "scripts/research-candidate.mjs",
+      "bytes": 7800,
+      "sha256": "da437a81aba99dbd5aad6459d4e32b49121b1d9c5fb013e9ec268ab212a988e4"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 1346,
+      "sha256": "ae3db5c1e5ac78957b507a528d891b2153fbd5e653084c81b971780409324635"
+    },
+    {
+      "path": "scripts/train-injuries.mjs",
+      "bytes": 16971,
+      "sha256": "a1b19e326c35dc3143d1513082cf9d75d5797a453a5d82fe2e48b13e9e8b8df5"
+    },
+    {
+      "path": "scripts/train.mjs",
+      "bytes": 6255,
+      "sha256": "005475126eefd9d56bd4d9bfc4025239720b7d4e07feb98d806f11b293cc0694"
+    },
+    {
+      "path": "scripts/update.mjs",
+      "bytes": 518,
+      "sha256": "d0ef921539460fed7207df20d6110257f05735128cad120eb784d6b9ba0ff3e9"
+    },
+    {
+      "path": "scripts/validate-model.mjs",
+      "bytes": 4695,
+      "sha256": "879dd1b494ccfc0be8f6d2d7093e064ce4e017c719398cf76c68c0428908e729"
+    },
+    {
+      "path": "test/fixtures/2024-real-ledger.json",
+      "bytes": 442963,
+      "sha256": "dc07b3dac7f0f7d4ed775c168cac42cf3c78fa9a15d5d6217759fa0e5ec77906"
+    },
+    {
+      "path": "test/fixtures/synthetic-slate.json",
+      "bytes": 13057,
+      "sha256": "7b403de3afc03c085fb939d4defb7d012028d714ff3216cab5ca3fee0a069abf"
+    },
+    {
+      "path": "test/handoff.test.mjs",
+      "bytes": 4202,
+      "sha256": "28feacb5efc4d845d122381df59026526cb5b608343cb0f2e2b7d745460ed79c"
+    },
+    {
+      "path": "test/injury-impact.test.mjs",
+      "bytes": 9883,
+      "sha256": "c8938b82cc019f6e3c3e9028a375abe0df1ff7bf64615cc5175a8981fa34f91f"
+    },
+    {
+      "path": "test/model.test.mjs",
+      "bytes": 7503,
+      "sha256": "adc02dde98c9384a544111a731eb2721183a76b17a897780dbfc34fa044f2057"
+    },
+    {
+      "path": "test/real-data.test.mjs",
+      "bytes": 6528,
+      "sha256": "77aaf3a61b726c976af928e7bcd295f4e07e0b791884bbfe3550810ce33cb56a"
+    },
+    {
+      "path": "test/server.test.mjs",
+      "bytes": 969,
+      "sha256": "557fa09bbeb820412fb9368a0349fdcb32f248e32fb17c57c4444503fc6960df"
+    }
+  ]
+}

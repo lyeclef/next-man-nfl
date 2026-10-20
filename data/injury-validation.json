@@ -1,0 +1,2588 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-20T22:01:43.159Z",
+  "trainingSeasons": [
+    2018,
+    2019,
+    2021,
+    2022
+  ],
+  "selectionSeason": 2023,
+  "holdoutSeason": 2024,
+  "audits": [
+    {
+      "season": 2018,
+      "teamGames": 512,
+      "events": 36,
+      "lateOrInvalidReports": 1,
+      "noSingleNewAbsence": 380,
+      "missingPriorDepth": 0,
+      "insufficientHistory": 96,
+      "inconsistentOutcomes": 0
+    },
+    {
+      "season": 2019,
+      "teamGames": 512,
+      "events": 41,
+      "lateOrInvalidReports": 5,
+      "noSingleNewAbsence": 375,
+      "missingPriorDepth": 0,
+      "insufficientHistory": 96,
+      "inconsistentOutcomes": 0
+    },
+    {
+      "season": 2021,
+      "teamGames": 544,
+      "events": 62,
+      "lateOrInvalidReports": 0,
+      "noSingleNewAbsence": 386,
+      "missingPriorDepth": 0,
+      "insufficientHistory": 96,
+      "inconsistentOutcomes": 0
+    },
+    {
+      "season": 2022,
+      "teamGames": 542,
+      "events": 68,
+      "lateOrInvalidReports": 0,
+      "noSingleNewAbsence": 378,
+      "missingPriorDepth": 0,
+      "insufficientHistory": 96,
+      "inconsistentOutcomes": 0
+    },
+    {
+      "season": 2023,
+      "teamGames": 544,
+      "events": 56,
+      "lateOrInvalidReports": 0,
+      "noSingleNewAbsence": 392,
+      "missingPriorDepth": 0,
+      "insufficientHistory": 96,
+      "inconsistentOutcomes": 0
+    },
+    {
+      "season": 2024,
+      "teamGames": 544,
+      "events": 66,
+      "lateOrInvalidReports": 0,
+      "noSingleNewAbsence": 382,
+      "missingPriorDepth": 0,
+      "insufficientHistory": 96,
+      "inconsistentOutcomes": 0
+    }
+  ],
+  "trainingEvents": 207,
+  "selectionEvents": 56,
+  "holdoutEvents": 66,
+  "modelId": "159b0665ce8763950ee66c2932e5c1cfe32c9c27d3cf8229eb34ddb3de46a6a4",
+  "method": "cross-position L1 workload transfer with unbiased starter projections",
+  "featureNames": [
+    "intercept",
+    "QB:role1",
+    "QB:role2",
+    "QB:role3",
+    "RB:role1",
+    "RB:role2",
+    "RB:role3",
+    "WR:role1",
+    "WR:role2",
+    "WR:role3",
+    "TE:role1",
+    "TE:role2",
+    "TE:role3",
+    "baseline/vacated",
+    "trend/vacated"
+  ],
+  "opportunityMetrics": {
+    "QB:carries": {
+      "playerGames": 6,
+      "teamGames": 3,
+      "gameClusters": 3,
+      "baselineMAE": 1.9345966574549285,
+      "learnedMAE": 1.5974305829714435,
+      "meanGameMAEImprovement": 0.33716607448348473,
+      "improvement95CI": [
+        -0.2533803789972364,
+        0.9293328069482826
+      ],
+      "scale": 0.75,
+      "validationSelected": true
+    },
+    "QB:attempts": {
+      "playerGames": 6,
+      "teamGames": 3,
+      "gameClusters": 3,
+      "baselineMAE": 14.794315041452824,
+      "learnedMAE": 14.332803329385444,
+      "meanGameMAEImprovement": 0.4615117120673773,
+      "improvement95CI": [
+        -9.031782471377813,
+        9.749227200947493
+      ],
+      "scale": 0.75,
+      "validationSelected": true
+    },
+    "RB:carries": {
+      "playerGames": 42,
+      "teamGames": 19,
+      "gameClusters": 19,
+      "baselineMAE": 4.639398041095633,
+      "learnedMAE": 4.02237033068261,
+      "meanGameMAEImprovement": 0.526082561071055,
+      "improvement95CI": [
+        -0.5013960545362618,
+        1.579144814760945
+      ],
+      "scale": 0.75,
+      "validationSelected": true
+    },
+    "RB:targets": {
+      "playerGames": 192,
+      "teamGames": 19,
+      "gameClusters": 19,
+      "baselineMAE": 1.7808387616791685,
+      "learnedMAE": 1.7836665186208709,
+      "meanGameMAEImprovement": -0.0022018236209204994,
+      "improvement95CI": [
+        -0.01828103239786651,
+        0.012249700996290743
+      ],
+      "scale": 0.25,
+      "validationSelected": true
+    },
+    "WR:targets": {
+      "playerGames": 294,
+      "teamGames": 29,
+      "gameClusters": 28,
+      "baselineMAE": 1.5803721936201767,
+      "learnedMAE": 1.547883604362648,
+      "meanGameMAEImprovement": 0.032852632243150014,
+      "improvement95CI": [
+        0.006377439432661093,
+        0.05837819410115928
+      ],
+      "scale": 0.5,
+      "validationSelected": true
+    },
+    "TE:targets": {
+      "playerGames": 129,
+      "teamGames": 14,
+      "gameClusters": 14,
+      "baselineMAE": 1.577744694949676,
+      "learnedMAE": 1.596436478922805,
+      "meanGameMAEImprovement": -0.010582764937315097,
+      "improvement95CI": [
+        -0.0867724840016746,
+        0.07323848537489032
+      ],
+      "scale": 0.75,
+      "validationSelected": true
+    }
+  },
+  "productionMetrics": {
+    "QB:passing_yards": {
+      "playerGames": 161,
+      "teamGames": 66,
+      "gameClusters": 63,
+      "baselineMAE": 54.303530657403904,
+      "learnedMAE": 51.49118315452469,
+      "meanGameMAEImprovement": 2.069100830981284,
+      "improvement95CI": [
+        -2.305484915107398,
+        6.506123722957289
+      ]
+    },
+    "QB:rushing_yards": {
+      "playerGames": 161,
+      "teamGames": 66,
+      "gameClusters": 63,
+      "baselineMAE": 7.900052931140765,
+      "learnedMAE": 7.579218150911808,
+      "meanGameMAEImprovement": 0.24903880060168174,
+      "improvement95CI": [
+        0.08332796733859915,
+        0.42451179335832867
+      ]
+    },
+    "RB:rushing_yards": {
+      "playerGames": 178,
+      "teamGames": 65,
+      "gameClusters": 62,
+      "baselineMAE": 21.73930424510089,
+      "learnedMAE": 21.32246931251131,
+      "meanGameMAEImprovement": 0.3287644916197849,
+      "improvement95CI": [
+        -0.7698513769315234,
+        1.6905292514557222
+      ]
+    },
+    "RB:receiving_yards": {
+      "playerGames": 178,
+      "teamGames": 65,
+      "gameClusters": 62,
+      "baselineMAE": 8.678893679840947,
+      "learnedMAE": 8.430344187745632,
+      "meanGameMAEImprovement": 0.23792383100924078,
+      "improvement95CI": [
+        -0.0048087147941033035,
+        0.49043614132721486
+      ]
+    },
+    "RB:receptions": {
+      "playerGames": 178,
+      "teamGames": 65,
+      "gameClusters": 62,
+      "baselineMAE": 0.9685621261332897,
+      "learnedMAE": 0.9397291810295536,
+      "meanGameMAEImprovement": 0.028771935376474097,
+      "improvement95CI": [
+        0.0013832381408409897,
+        0.05837977873691279
+      ]
+    },
+    "WR:receiving_yards": {
+      "playerGames": 288,
+      "teamGames": 66,
+      "gameClusters": 63,
+      "baselineMAE": 20.41081506732552,
+      "learnedMAE": 20.429522786147373,
+      "meanGameMAEImprovement": -0.04986596182540361,
+      "improvement95CI": [
+        -0.5937785317063469,
+        0.441001926487105
+      ]
+    },
+    "WR:receptions": {
+      "playerGames": 288,
+      "teamGames": 66,
+      "gameClusters": 63,
+      "baselineMAE": 1.436510684747655,
+      "learnedMAE": 1.4447777565065458,
+      "meanGameMAEImprovement": -0.004732074881117797,
+      "improvement95CI": [
+        -0.04433996305152406,
+        0.024054845241153127
+      ]
+    },
+    "TE:receiving_yards": {
+      "playerGames": 191,
+      "teamGames": 66,
+      "gameClusters": 63,
+      "baselineMAE": 12.837018983615579,
+      "learnedMAE": 12.891959981667918,
+      "meanGameMAEImprovement": -0.022618181769485105,
+      "improvement95CI": [
+        -0.9206286504278186,
+        0.9250769434649401
+      ]
+    },
+    "TE:receptions": {
+      "playerGames": 191,
+      "teamGames": 66,
+      "gameClusters": 63,
+      "baselineMAE": 1.1807009287500292,
+      "learnedMAE": 1.1867853225070495,
+      "meanGameMAEImprovement": 0.0017026237418491434,
+      "improvement95CI": [
+        -0.05932909337575211,
+        0.07380698585607773
+      ]
+    }
+  },
+  "releaseStatus": "Validated: out-of-sample MAE improved across all 9 evaluated markets.",
+  "examples": [
+    {
+      "id": "2024:6:NO",
+      "gameId": "2024_06_TB_NO",
+      "season": 2024,
+      "week": 6,
+      "team": "NO",
+      "opponent": "TB",
+      "kickoff": "2024-10-13T17:00:00.000Z",
+      "injuryId": "00-0031280",
+      "injuryPlayer": "Derek Carr",
+      "injuryPosition": "QB",
+      "injuryDescription": "Oblique",
+      "injuryUpdatedAt": "2024-10-11T18:53:02Z",
+      "historyWeeks": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "depthWeek": 5,
+      "vacated": {
+        "carries": 1.3513620213185942,
+        "targets": 0,
+        "attempts": 28.005527043031975
+      },
+      "players": [
+        {
+          "id": "00-0037545",
+          "name": "Rashid Shaheed",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0.9589419660481641,
+            "targets": 8.101855507303592,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 5.6292933280694815,
+            "receiving_yards": 69.88866956178444,
+            "receptions": 4.3316225819186736
+          },
+          "last": {
+            "carries": 0,
+            "targets": 9,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.08712266817411,
+            "receiving_yards": 8.750031793065297,
+            "receptions": 0.5775480552181957
+          },
+          "actual": {
+            "carries": 1,
+            "targets": 7,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 2,
+            "receiving_yards": 11,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0036040",
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 2.803000394788788,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 15.831030398736678,
+            "receptions": 2.526648243189894
+          },
+          "last": {
+            "carries": 0,
+            "targets": 5,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 6.749982212533192,
+            "receptions": 0.7505001835666575
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 48,
+            "receptions": 3
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039376",
+          "name": "Spencer Rattler",
+          "position": "QB",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 7.1687921285076746,
+            "rushing_yards": 4.366466789667896,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 4,
+            "targets": 0,
+            "attempts": 40,
+            "passing_yards": 243,
+            "rushing_yards": 27,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033948",
+          "name": "Jamaal Williams",
+          "position": "RB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 2.895380971180418,
+            "targets": 1.1330438215554677,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 11.680615870509277,
+            "receiving_yards": 2.2108172127911567,
+            "receptions": 0.7461508093170154
+          },
+          "last": {
+            "carries": 2,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.2444998891244055,
+            "receiving_yards": 4.817753313381787,
+            "receptions": 0.726100897819581
+          },
+          "actual": {
+            "carries": 2,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 7,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039386",
+          "name": "Bub Means",
+          "position": "WR",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 8.000093259658204,
+            "receptions": 0.6274742953067077
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 8,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 45,
+            "receptions": 5
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039623",
+          "name": "Mason Tipton",
+          "position": "WR",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 2.4358468219502565,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 4.575602052901698,
+            "receptions": 1.0580339518357678
+          },
+          "last": {
+            "carries": 0,
+            "targets": 4,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 6.043539082385785,
+            "receptions": 0.5831354099826355
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 15,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0038678",
+          "name": "Jordan Mims",
+          "position": "RB",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.315649811511489,
+            "receiving_yards": 5.890337751175716,
+            "receptions": 0.768134530426108
+          },
+          "actual": {
+            "carries": 1,
+            "targets": 4,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 5,
+            "receiving_yards": 13,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034981",
+          "name": "Foster Moreau",
+          "position": "TE",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 1.1764705882352942,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 5.519147256217924,
+            "receptions": 0.9830240821160678
+          },
+          "last": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 6.6447153099086,
+            "receptions": 0.6979739064227959
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 54,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0038998",
+          "name": "Jake Haener",
+          "position": "QB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 1.1958152388472167,
+            "targets": 0,
+            "attempts": 2.763521515988946,
+            "passing_yards": 6.7114093959731544,
+            "rushing_yards": 3.936439005132254,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 2,
+            "targets": 0,
+            "attempts": 7
+          },
+          "rates": {
+            "passing_yards": 6.586659761848837,
+            "rushing_yards": 3.813173431734317,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0.375,
+            "targets": 0,
+            "attempts": 0.645
+          }
+        },
+        {
+          "id": "00-0038612",
+          "name": "A.T. Perry",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 8.000093259658204,
+            "receptions": 0.6274742953067077
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034418",
+          "name": "Cedrick Wilson",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 0.1934465061192262,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0.5803395183576786,
+            "receptions": 0.1934465061192262
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 7.687587430929566,
+            "receptions": 0.6507571518500385
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 28,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033906",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 17.331227793130676,
+            "targets": 6.632056849585472,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 63.945913936044214,
+            "receiving_yards": 43.938018160284244,
+            "receptions": 5.154362416107382
+          },
+          "last": {
+            "carries": 11,
+            "targets": 8,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.0761770440648935,
+            "receiving_yards": 7.246185954411466,
+            "receptions": 0.7768952093787269
+          },
+          "actual": {
+            "carries": 13,
+            "targets": 8,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 40,
+            "receiving_yards": 24,
+            "receptions": 5
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039613",
+          "name": "Dallin Holker",
+          "position": "TE",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 7.416639392550893,
+            "receptions": 0.6841002814688747
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0037239",
+          "name": "Chris Olave",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0.13541255428345833,
+            "targets": 6.315831030398737,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0.9478878799842082,
+            "receiving_yards": 55.595341492301614,
+            "receptions": 4.702724042637189
+          },
+          "last": {
+            "carries": 0,
+            "targets": 4,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.294193652588226,
+            "receiving_yards": 9.365887777923733,
+            "receptions": 0.7173686446244052
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 1,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 5,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024:18:KC",
+      "gameId": "2024_18_KC_DEN",
+      "season": 2024,
+      "week": 18,
+      "team": "KC",
+      "opponent": "DEN",
+      "kickoff": "2025-01-05T21:25:00.000Z",
+      "injuryId": "00-0037197",
+      "injuryPlayer": "Isiah Pacheco",
+      "injuryPosition": "RB",
+      "injuryDescription": "Rib",
+      "injuryUpdatedAt": "2025-01-03T21:03:40Z",
+      "historyWeeks": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "depthWeek": 17,
+      "vacated": {
+        "carries": 9.266482431898934,
+        "targets": 1.2878010264508486,
+        "attempts": 0
+      },
+      "players": [
+        {
+          "id": "00-0036637",
+          "name": "Noah Gray",
+          "position": "TE",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 2.315436241610738,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 12.71535728385314,
+            "receptions": 1.599684168969601
+          },
+          "last": {
+            "carries": 0,
+            "targets": 1,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 6.453688551417163,
+            "receptions": 0.676352008223449
+          },
+          "actual": {
+            "carries": 1,
+            "targets": 1,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": -4,
+            "receiving_yards": 1,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033923",
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 9.78484011054086,
+            "targets": 1.3513620213185942,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 33.966837741808135,
+            "receiving_yards": 9.166600868535332,
+            "receptions": 0.8815633636004736
+          },
+          "last": {
+            "carries": 9,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 3.8329826936246514,
+            "receiving_yards": 6.159765060363606,
+            "receptions": 0.7391437122091248
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0.44999999999999996,
+            "targets": 0.07,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039325",
+          "name": "Carson Steele",
+          "position": "RB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.315649811511489,
+            "receiving_yards": 5.890337751175716,
+            "receptions": 0.768134530426108
+          },
+          "actual": {
+            "carries": 8,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 25,
+            "receiving_yards": 2,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0.165,
+            "targets": 0.055,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033455",
+          "name": "Anthony Firkser",
+          "position": "TE",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 7.416639392550893,
+            "receptions": 0.6841002814688747
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0032950",
+          "name": "Carson Wentz",
+          "position": "QB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0.5803395183576786,
+            "targets": 0,
+            "attempts": 0.3868930122384524,
+            "passing_yards": 3.868930122384524,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 7.277684738949687,
+            "rushing_yards": 3.796927643189475,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 17,
+            "passing_yards": 98,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0035662",
+          "name": "Marquise Brown",
+          "position": "WR",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 4.974338728780102,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 30.596131069877618,
+            "receptions": 2.9609159099881563
+          },
+          "last": {
+            "carries": 0,
+            "targets": 7,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 7.033379963162435,
+            "receptions": 0.6137371476533537
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0030506",
+          "name": "Travis Kelce",
+          "position": "TE",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 8.637189103829451,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 52.769443347808924,
+            "receptions": 5.990919857876036
+          },
+          "last": {
+            "carries": 0,
+            "targets": 11,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 6.32445938060135,
+            "receptions": 0.6864149834475133
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0.03,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033873",
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 2.7050927753651797,
+            "targets": 0,
+            "attempts": 38.69364390051322,
+            "passing_yards": 257.3786024476905,
+            "rushing_yards": 18.86735096723253,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 1,
+            "targets": 0,
+            "attempts": 38
+          },
+          "rates": {
+            "passing_yards": 6.409017678555803,
+            "rushing_yards": 5.104041743542435,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033526",
+          "name": "Samaje Perine",
+          "position": "RB",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 1.1184366363995262,
+            "targets": 2.082905645479668,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 6.087248322147651,
+            "receiving_yards": 28.329253849190682,
+            "receptions": 1.94749309119621
+          },
+          "last": {
+            "carries": 2,
+            "targets": 2,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.554708176259574,
+            "receiving_yards": 8.580655055114596,
+            "receptions": 0.8053051285387661
+          },
+          "actual": {
+            "carries": 1,
+            "targets": 1,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 1,
+            "receiving_yards": 13,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0.24,
+            "targets": 0.07,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0030564",
+          "name": "DeAndre Hopkins",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 5.063955783655744,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 24.285827082510853,
+            "receptions": 3.4038689301223846
+          },
+          "last": {
+            "carries": 0,
+            "targets": 4,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 6.105299970917712,
+            "receptions": 0.6424240639368582
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039894",
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 2.3343861034346625,
+            "targets": 9.533359652585865,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 13.19186735096723,
+            "receiving_yards": 63.6016581129096,
+            "receptions": 6.930517173312278
+          },
+          "last": {
+            "carries": 2,
+            "targets": 9,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.213036782908715,
+            "receiving_yards": 6.750026901824483,
+            "receptions": 0.6810022005692425
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034386",
+          "name": "Justin Watson",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 1.2593762337149625,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 23.68732727990525,
+            "receptions": 0.7895775759968418
+          },
+          "last": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 9.473757836572267,
+            "receptions": 0.6006376015579271
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 5,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0038519",
+          "name": "Nikko Remigio",
+          "position": "WR",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 8.000093259658204,
+            "receptions": 0.6274742953067077
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 6,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 48,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0033857",
+          "name": "JuJu Smith-Schuster",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 1.9170943545203316,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 12.658112909593367,
+            "receptions": 1.2538491906829845
+          },
+          "last": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 7.652234734559698,
+            "receptions": 0.6266136708522007
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 4,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024:4:PHI",
+      "gameId": "2024_04_PHI_TB",
+      "season": 2024,
+      "week": 4,
+      "team": "PHI",
+      "opponent": "TB",
+      "kickoff": "2024-09-29T17:00:00.000Z",
+      "injuryId": "00-0036912",
+      "injuryPlayer": "DeVonta Smith",
+      "injuryPosition": "WR",
+      "injuryDescription": "Concussion",
+      "injuryUpdatedAt": "2024-09-27T19:50:09Z",
+      "historyWeeks": [
+        1,
+        2,
+        3
+      ],
+      "depthWeek": 3,
+      "vacated": {
+        "carries": 0,
+        "targets": 9.552511415525116,
+        "attempts": 0
+      },
+      "players": [
+        {
+          "id": "00-0035676",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 2.237442922374429,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 26.625570776255707,
+            "receptions": 1.1187214611872145
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 9.560055955794923,
+            "receptions": 0.5764845771840246
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0.06,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0036389",
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 10.71689497716895,
+            "targets": 0,
+            "attempts": 34.54794520547945,
+            "passing_yards": 262.70319634703196,
+            "rushing_yards": 45.96803652968036,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 8,
+            "targets": 0,
+            "attempts": 38
+          },
+          "rates": {
+            "passing_yards": 7.437102673851209,
+            "rushing_yards": 4.265358070247369,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 8,
+            "targets": 0,
+            "attempts": 30,
+            "passing_yards": 158,
+            "rushing_yards": 20,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0037132",
+          "name": "Britain Covey",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 2.374429223744292,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 12.374429223744292,
+            "receptions": 2.374429223744292
+          },
+          "last": {
+            "carries": 0,
+            "targets": 1,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 7.000063586130594,
+            "receptions": 0.7460052013454824
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0038102",
+          "name": "Kenny Pickett",
+          "position": "QB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 7.1687921285076746,
+            "rushing_yards": 4.366466789667896,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039746",
+          "name": "Will Shipley",
+          "position": "RB",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.315649811511489,
+            "receiving_yards": 5.890337751175716,
+            "receptions": 0.768134530426108
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034844",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 20.164383561643834,
+            "targets": 3.8721461187214614,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 121.87671232876711,
+            "receiving_yards": 15.968036529680365,
+            "receptions": 3.552511415525114
+          },
+          "last": {
+            "carries": 17,
+            "targets": 4,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 5.268831279882287,
+            "receiving_yards": 5.436733317985989,
+            "receptions": 0.8277699213996778
+          },
+          "actual": {
+            "carries": 10,
+            "targets": 4,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 84,
+            "receiving_yards": 32,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0038400",
+          "name": "Tanner McKee",
+          "position": "QB",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 7.1687921285076746,
+            "rushing_yards": 4.366466789667896,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034351",
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 7.420091324200913,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 96.70776255707763,
+            "receptions": 6.4200913242009126
+          },
+          "last": {
+            "carries": 0,
+            "targets": 11,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 10.007131168236098,
+            "receptions": 0.7789001206295177
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 8,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 62,
+            "receptions": 7
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0.03,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0037086",
+          "name": "Grant Calcaterra",
+          "position": "TE",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 0.863013698630137,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 8.534246575342465,
+            "receptions": 0.863013698630137
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 7.847199493792412,
+            "receptions": 0.7367502345573956
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 26,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0037741",
+          "name": "Jahan Dotson",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 1.9132420091324198,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 5.570776255707762,
+            "receptions": 1.2328767123287672
+          },
+          "last": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 6.700069944743653,
+            "receptions": 0.6206057214800308
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 4,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 11,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0.13,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039236",
+          "name": "Johnny Wilson",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 1.45662100456621,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 4.109589041095891,
+            "receptions": 0.4566210045662101
+          },
+          "last": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 6.789547310256477,
+            "receptions": 0.5480060226105588
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0036919",
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0.863013698630137,
+            "targets": 1.593607305936073,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 2.3652968036529676,
+            "receiving_yards": 7.716894977168949,
+            "receptions": 1.136986301369863
+          },
+          "last": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 4.100565053488251,
+            "receiving_yards": 5.808161382507144,
+            "receptions": 0.7643167345469274
+          },
+          "actual": {
+            "carries": 2,
+            "targets": 1,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 9,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "2024:10:BAL",
+      "gameId": "2024_10_CIN_BAL",
+      "season": 2024,
+      "week": 10,
+      "team": "BAL",
+      "opponent": "CIN",
+      "kickoff": "2024-11-08T01:15:00.000Z",
+      "injuryId": "00-0037838",
+      "injuryPlayer": "Isaiah Likely",
+      "injuryPosition": "TE",
+      "injuryDescription": "Hamstring",
+      "injuryUpdatedAt": "2024-11-06T20:30:27Z",
+      "historyWeeks": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "depthWeek": 9,
+      "vacated": {
+        "carries": 0,
+        "targets": 2.8156336360047374,
+        "attempts": 0
+      },
+      "players": [
+        {
+          "id": "00-0031549",
+          "name": "Nelson Agholor",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 2.5696802210817213,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 28.651796288985388,
+            "receptions": 1.552704303197789
+          },
+          "last": {
+            "carries": 0,
+            "targets": 1,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 8.84620764980281,
+            "receptions": 0.5927736319077159
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 6,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034753",
+          "name": "Mark Andrews",
+          "position": "TE",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 3.4867745756020527,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 37.081721279115676,
+            "receptions": 3.3513620213185944
+          },
+          "last": {
+            "carries": 0,
+            "targets": 2,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 9.34165302960878,
+            "receptions": 0.8087168074011041
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 7,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 68,
+            "receptions": 6
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0.28500000000000003,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034796",
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 6.625740228977496,
+            "targets": 0,
+            "attempts": 25.778918278720887,
+            "passing_yards": 288.5033557046979,
+            "rushing_yards": 29.76707461508093,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 3,
+            "targets": 0,
+            "attempts": 19
+          },
+          "rates": {
+            "passing_yards": 9.880255525325056,
+            "rushing_yards": 4.4966536430070185,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 7,
+            "targets": 0,
+            "attempts": 33,
+            "passing_yards": 290,
+            "rushing_yards": 33,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0026300",
+          "name": "Josh Johnson",
+          "position": "QB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 1.1843663639952626,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0.7895775759968418,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 3,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 7.1687921285076746,
+            "rushing_yards": 3.8838841649286056,
+            "receiving_yards": 3.1842105263157894,
+            "receptions": 0.6842105263157895
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0034975",
+          "name": "Justice Hill",
+          "position": "RB",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 3.629293328069483,
+            "targets": 2.176470588235294,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 8.348203711014607,
+            "receiving_yards": 29.62731938412949,
+            "receptions": 2.176470588235294
+          },
+          "last": {
+            "carries": 5,
+            "targets": 3,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 3.403424128188781,
+            "receiving_yards": 8.319785489897205,
+            "receptions": 0.8487833894083314
+          },
+          "actual": {
+            "carries": 2,
+            "targets": 2,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": -2,
+            "receiving_yards": 0,
+            "receptions": 2
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039064",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0.32885906040268453,
+            "targets": 7.097118041847611,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 3.9463087248322144,
+            "receiving_yards": 101.92104224240032,
+            "receptions": 5.320568495854717
+          },
+          "last": {
+            "carries": 0,
+            "targets": 6,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.644457577470579,
+            "receiving_yards": 11.744218578950537,
+            "receptions": 0.7305142890604794
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 6,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 34,
+            "receptions": 4
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0036550",
+          "name": "Rashod Bateman",
+          "position": "WR",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 0,
+            "targets": 4.2763521515988945,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 50.62889853928149,
+            "receptions": 2.7761547572048952
+          },
+          "last": {
+            "carries": 0,
+            "targets": 4,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 11.406293715464784,
+            "receptions": 0.6691285759250192
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 8,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 54,
+            "receptions": 6
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0038046",
+          "name": "Charlie Kolar",
+          "position": "TE",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0.7461508093170154,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 5.195420450059219,
+            "receptions": 0.4697986577181208
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 10.166666666666666,
+            "rushing_yards": 4.8933333333333335,
+            "receiving_yards": 7.458310604903523,
+            "receptions": 0.68119467900184
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 1,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 4,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0.24,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0036630",
+          "name": "Tylan Wallace",
+          "position": "WR",
+          "depthRank": 2,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 8.000093259658204,
+            "receptions": 0.6274742953067077
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 115,
+            "receptions": 3
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0039792",
+          "name": "Devontez Walker",
+          "position": "WR",
+          "depthRank": 3,
+          "baseline": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 13.184782608695652,
+            "rushing_yards": 6.258903335217637,
+            "receiving_yards": 8.000093259658204,
+            "receptions": 0.6274742953067077
+          },
+          "actual": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 0,
+            "receiving_yards": 0,
+            "receptions": 0
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0032764",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 18.271614686142915,
+            "targets": 0.8645874457165417,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 112.58823529411764,
+            "receiving_yards": 14.279510461902882,
+            "receptions": 0.8645874457165417
+          },
+          "last": {
+            "carries": 23,
+            "targets": 1,
+            "attempts": 0
+          },
+          "rates": {
+            "passing_yards": 6.205882352941177,
+            "rushing_yards": 6.089387056239031,
+            "receiving_yards": 7.353059237090873,
+            "receptions": 0.80677877535509
+          },
+          "actual": {
+            "carries": 16,
+            "targets": 1,
+            "attempts": 0,
+            "passing_yards": 0,
+            "rushing_yards": 68,
+            "receiving_yards": 3,
+            "receptions": 1
+          },
+          "allocation": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Retrospective observational evaluation across chronological train/selection/test folds.",
+    "Final archived injury reports must have date_modified before kickoff; reports revised after kickoff are excluded rather than reconstructed.",
+    "Candidate selection uses the previous team game’s depth chart, not the realized current-game stat list. Missing candidate stats are zero if team game stats exist; this includes inactive, traded, benched and zero-usage players, not just active players.",
+    "Archived depth charts and final stat corrections are not guaranteed publication-time snapshots. Only weeks strictly before the target game are used.",
+    "Model selection uses 2023 only; 2024 is evaluated with frozen hyperparameters and does not select model effects."
+  ],
+  "sources": [
+    {
+      "kind": "games",
+      "season": "all",
+      "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+      "sha256": "131ca64f24d1f4389c22003241f9e474ba19da362fa37ae9fdd7e664ae0dcb87",
+      "rows": 7548
+    },
+    {
+      "kind": "injuries",
+      "season": 2018,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2018.csv",
+      "sha256": "4724e1f37cc3076f564e997fbf269190e7dbe795a39315b903788e0a9c40065e",
+      "rows": 5133
+    },
+    {
+      "kind": "stats",
+      "season": 2018,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2018.csv",
+      "sha256": "78cf79337e6e203c0fcc23004f5c1e9c1b6ee79ad66e17559ae76cd7082251b0",
+      "rows": 5281
+    },
+    {
+      "kind": "depth",
+      "season": 2018,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2018.csv",
+      "sha256": "2c44efb1d96f8b8fef8a8ae42c44db340e97921745420d96b012778e184255bb",
+      "rows": 36560
+    },
+    {
+      "kind": "injuries",
+      "season": 2019,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2019.csv",
+      "sha256": "daddfe8e04ddc3a29bce14f362e774fbadfb274c807f1f0fde7b5bf32aaf6cdf",
+      "rows": 5392
+    },
+    {
+      "kind": "stats",
+      "season": 2019,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2019.csv",
+      "sha256": "b1338e5f364cd385f75aecf15fec69be02d075f5545749ecb4bcbc351e09718a",
+      "rows": 5261
+    },
+    {
+      "kind": "depth",
+      "season": 2019,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2019.csv",
+      "sha256": "328405d1feb09cc4b23922c26bf23adf7d6a6e894ba0e7305b88dda793710647",
+      "rows": 36308
+    },
+    {
+      "kind": "injuries",
+      "season": 2021,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2021.csv",
+      "sha256": "1049fb9ff0fe7cfcf3ba8bfe1f5a35d3aba985c461c8fb7bf5201735b6d34254",
+      "rows": 5587
+    },
+    {
+      "kind": "stats",
+      "season": 2021,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2021.csv",
+      "sha256": "41ff0aafb569b5d47836168bdd755a8dcac4581d40dc42efe2f7821a341e903a",
+      "rows": 5698
+    },
+    {
+      "kind": "depth",
+      "season": 2021,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2021.csv",
+      "sha256": "91e3384ff13146c77f02fed2c3eca163d35868dd62da6b794c5b51df1d15b724",
+      "rows": 37487
+    },
+    {
+      "kind": "injuries",
+      "season": 2022,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2022.csv",
+      "sha256": "5f0d60324e597edd1a2ced8540b04e40b51dd440591dd1df11b8d96343387c9e",
+      "rows": 5682
+    },
+    {
+      "kind": "stats",
+      "season": 2022,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2022.csv",
+      "sha256": "42f3a4da856546bd9606dde29eecf54e8dbbd6627264bbd8e153dd34ecd0e535",
+      "rows": 5631
+    },
+    {
+      "kind": "depth",
+      "season": 2022,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2022.csv",
+      "sha256": "4c64ee59666431c49cbc0a818cc3165886012cf72b545771a77c0805aa621b9c",
+      "rows": 37780
+    },
+    {
+      "kind": "injuries",
+      "season": 2023,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2023.csv",
+      "sha256": "16b04e21da5aa3944cfa9c22cafcc84ed7e6d9866eaddf0344e9b8cbf2f63afe",
+      "rows": 5599
+    },
+    {
+      "kind": "stats",
+      "season": 2023,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2023.csv",
+      "sha256": "fc731277c81c7ee25fb6af50cebd29a2adf3f8aadddeec1c485231aa9f98bdcc",
+      "rows": 5653
+    },
+    {
+      "kind": "depth",
+      "season": 2023,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2023.csv",
+      "sha256": "583f83842590e7e7d3417e0cd9c5c9e38f8696353bb754561d80e5583d2a98cf",
+      "rows": 37327
+    },
+    {
+      "kind": "injuries",
+      "season": 2024,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2024.csv",
+      "sha256": "498bce8e13cb64b2ab9bb0ad6cb81d0a63c2ddb24016c9fc90c2de2126fae449",
+      "rows": 6215
+    },
+    {
+      "kind": "stats",
+      "season": 2024,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2024.csv",
+      "sha256": "4f1598c9a6ba396a52e256762a0d9148abd22cdf856f26fc8825fa1d1dc49631",
+      "rows": 5597
+    },
+    {
+      "kind": "depth",
+      "season": 2024,
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2024.csv",
+      "sha256": "f210a33774611f7f78a89af789b61c6289a2631a21227a1a3c63c973c23588b7",
+      "rows": 37312
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "generatedAt": "2026-10-20T22:01:49.023Z",
+  "method": "Chronological train / model-selection / test folds. Each test season is excluded from that fold’s priors, regression fitting and hyperparameter selection.",
+  "folds": [
+    {
+      "testSeason": 2022,
+      "trainingSeasons": [
+        2018,
+        2019
+      ],
+      "selectionSeason": 2021,
+      "modelId": "99098951adf15ffdc92e6e60d3ce39007873b336da59c6e0f347a5c6b20a54b4",
+      "events": 68,
+      "metrics": {
+        "QB:passing_yards": {
+          "playerGames": 155,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 55.3853966644854,
+          "learnedMAE": 49.319639846750135,
+          "meanGameMAEImprovement": 6.882213227184769,
+          "improvement95CI": [
+            -0.6823680935385439,
+            15.039840932596313
+          ]
+        },
+        "QB:rushing_yards": {
+          "playerGames": 155,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 7.242675669585673,
+          "learnedMAE": 6.914283047441354,
+          "meanGameMAEImprovement": 0.34058166464781436,
+          "improvement95CI": [
+            0.05254816945288195,
+            0.6252510181583539
+          ]
+        },
+        "RB:rushing_yards": {
+          "playerGames": 210,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 16.9499097621416,
+          "learnedMAE": 16.88966837215971,
+          "meanGameMAEImprovement": -0.23817056685945456,
+          "improvement95CI": [
+            -1.1496810411103062,
+            0.5677466688535697
+          ]
+        },
+        "RB:receiving_yards": {
+          "playerGames": 210,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 9.973165557223798,
+          "learnedMAE": 9.686433175953093,
+          "meanGameMAEImprovement": 0.25548553545983405,
+          "improvement95CI": [
+            -0.011435481722289791,
+            0.4969777949975845
+          ]
+        },
+        "RB:receptions": {
+          "playerGames": 210,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 1.1563759146515316,
+          "learnedMAE": 1.125506855579044,
+          "meanGameMAEImprovement": 0.02849578487516878,
+          "improvement95CI": [
+            0.00021903896864938855,
+            0.05739820576485362
+          ]
+        },
+        "WR:receiving_yards": {
+          "playerGames": 327,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 18.47244807391856,
+          "learnedMAE": 17.919211850451322,
+          "meanGameMAEImprovement": 0.4469862995895947,
+          "improvement95CI": [
+            0.07579504208083757,
+            0.8516684924009187
+          ]
+        },
+        "WR:receptions": {
+          "playerGames": 327,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 1.3160303698963534,
+          "learnedMAE": 1.2729429699773773,
+          "meanGameMAEImprovement": 0.03761802051132892,
+          "improvement95CI": [
+            0.0058325327010096744,
+            0.07103100160074681
+          ]
+        },
+        "TE:receiving_yards": {
+          "playerGames": 199,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 13.447098839202766,
+          "learnedMAE": 13.004095121567492,
+          "meanGameMAEImprovement": 0.4881157787720525,
+          "improvement95CI": [
+            0.17543499092379167,
+            0.8000669324032008
+          ]
+        },
+        "TE:receptions": {
+          "playerGames": 199,
+          "teamGames": 68,
+          "gameClusters": 62,
+          "baselineMAE": 1.0559523933439963,
+          "learnedMAE": 1.0483040872275495,
+          "meanGameMAEImprovement": 0.006994478923499926,
+          "improvement95CI": [
+            -0.024747196543182536,
+            0.040427775266943286
+          ]
+        }
+      }
+    },
+    {
+      "testSeason": 2023,
+      "trainingSeasons": [
+        2018,
+        2019,
+        2021
+      ],
+      "selectionSeason": 2022,
+      "modelId": "8cedf198fceb1cacccaea21834be575441ae6d96bbaef3f7afbf6eb74cbb0df7",
+      "events": 56,
+      "metrics": {
+        "QB:passing_yards": {
+          "playerGames": 124,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 64.17258293868066,
+          "learnedMAE": 60.44034804463438,
+          "meanGameMAEImprovement": 5.36811949395222,
+          "improvement95CI": [
+            -3.324899372619432,
+            15.072907487431584
+          ]
+        },
+        "QB:rushing_yards": {
+          "playerGames": 124,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 7.641607726469124,
+          "learnedMAE": 7.333299235426216,
+          "meanGameMAEImprovement": 0.281243936115678,
+          "improvement95CI": [
+            -0.13647601819851313,
+            0.7613314220629489
+          ]
+        },
+        "RB:rushing_yards": {
+          "playerGames": 158,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 19.614134969556684,
+          "learnedMAE": 19.47790949013504,
+          "meanGameMAEImprovement": -0.03566357533828515,
+          "improvement95CI": [
+            -2.4649877632782187,
+            2.1870383953288584
+          ]
+        },
+        "RB:receiving_yards": {
+          "playerGames": 158,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 8.424666099424297,
+          "learnedMAE": 8.10740617762665,
+          "meanGameMAEImprovement": 0.3204312648933858,
+          "improvement95CI": [
+            0.0761126139626521,
+            0.5734010946880806
+          ]
+        },
+        "RB:receptions": {
+          "playerGames": 158,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 0.9612954344949086,
+          "learnedMAE": 0.920884116168661,
+          "meanGameMAEImprovement": 0.0434891611458247,
+          "improvement95CI": [
+            0.012355639374936308,
+            0.07808904319776165
+          ]
+        },
+        "WR:receiving_yards": {
+          "playerGames": 277,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 20.5532720040278,
+          "learnedMAE": 20.230844613326877,
+          "meanGameMAEImprovement": 0.3308072208302984,
+          "improvement95CI": [
+            -0.05456090723838506,
+            0.7200752470735243
+          ]
+        },
+        "WR:receptions": {
+          "playerGames": 277,
+          "teamGames": 56,
+          "gameClusters": 52,
+          "baselineMAE": 1.3613195296361427,
+          "learnedMAE": 1.3333643152886643,
+          "meanGameMAEImprovement": 0.029769426637394285,
+          "improvement95CI": [
+            0.002391516797691196,
+            0.06012405104967147
+          ]
+        },
+        "TE:receiving_yards": {
+          "playerGames": 161,
+          "teamGames": 55,
+          "gameClusters": 51,
+          "baselineMAE": 12.398568698801077,
+          "learnedMAE": 12.234984240599745,
+          "meanGameMAEImprovement": 0.22177657661426423,
+          "improvement95CI": [
+            -0.14833588096929068,
+            0.6015454598957644
+          ]
+        },
+        "TE:receptions": {
+          "playerGames": 161,
+          "teamGames": 55,
+          "gameClusters": 51,
+          "baselineMAE": 1.0142925006739973,
+          "learnedMAE": 1.0093804655284293,
+          "meanGameMAEImprovement": 0.011740836497504533,
+          "improvement95CI": [
+            -0.018857334753077673,
+            0.04695865677454541
+          ]
+        }
+      }
+    },
+    {
+      "testSeason": 2024,
+      "trainingSeasons": [
+        2018,
+        2019,
+        2021,
+        2022
+      ],
+      "selectionSeason": 2023,
+      "modelId": "159b0665ce8763950ee66c2932e5c1cfe32c9c27d3cf8229eb34ddb3de46a6a4",
+      "events": 66,
+      "metrics": {
+        "QB:passing_yards": {
+          "playerGames": 161,
+          "teamGames": 66,
+          "gameClusters": 63,
+          "baselineMAE": 54.303530657403904,
+          "learnedMAE": 51.49118315452469,
+          "meanGameMAEImprovement": 2.069100830981284,
+          "improvement95CI": [
+            -2.305484915107398,
+            6.506123722957289
+          ]
+        },
+        "QB:rushing_yards": {
+          "playerGames": 161,
+          "teamGames": 66,
+          "gameClusters": 63,
+          "baselineMAE": 7.900052931140765,
+          "learnedMAE": 7.579218150911808,
+          "meanGameMAEImprovement": 0.24903880060168174,
+          "improvement95CI": [
+            0.08332796733859915,
+            0.42451179335832867
+          ]
+        },
+        "RB:rushing_yards": {
+          "playerGames": 178,
+          "teamGames": 65,
+          "gameClusters": 62,
+          "baselineMAE": 21.73930424510089,
+          "learnedMAE": 21.32246931251131,
+          "meanGameMAEImprovement": 0.3287644916197849,
+          "improvement95CI": [
+            -0.7698513769315234,
+            1.6905292514557222
+          ]
+        },
+        "RB:receiving_yards": {
+          "playerGames": 178,
+          "teamGames": 65,
+          "gameClusters": 62,
+          "baselineMAE": 8.678893679840947,
+          "learnedMAE": 8.430344187745632,
+          "meanGameMAEImprovement": 0.23792383100924078,
+          "improvement95CI": [
+            -0.0048087147941033035,
+            0.49043614132721486
+          ]
+        },
+        "RB:receptions": {
+          "playerGames": 178,
+          "teamGames": 65,
+          "gameClusters": 62,
+          "baselineMAE": 0.9685621261332897,
+          "learnedMAE": 0.9397291810295536,
+          "meanGameMAEImprovement": 0.028771935376474097,
+          "improvement95CI": [
+            0.0013832381408409897,
+            0.05837977873691279
+          ]
+        },
+        "WR:receiving_yards": {
+          "playerGames": 288,
+          "teamGames": 66,
+          "gameClusters": 63,
+          "baselineMAE": 20.41081506732552,
+          "learnedMAE": 20.429522786147373,
+          "meanGameMAEImprovement": -0.04986596182540361,
+          "improvement95CI": [
+            -0.5937785317063469,
+            0.441001926487105
+          ]
+        },
+        "WR:receptions": {
+          "playerGames": 288,
+          "teamGames": 66,
+          "gameClusters": 63,
+          "baselineMAE": 1.436510684747655,
+          "learnedMAE": 1.4447777565065458,
+          "meanGameMAEImprovement": -0.004732074881117797,
+          "improvement95CI": [
+            -0.04433996305152406,
+            0.024054845241153127
+          ]
+        },
+        "TE:receiving_yards": {
+          "playerGames": 191,
+          "teamGames": 66,
+          "gameClusters": 63,
+          "baselineMAE": 12.837018983615579,
+          "learnedMAE": 12.891959981667918,
+          "meanGameMAEImprovement": -0.022618181769485105,
+          "improvement95CI": [
+            -0.9206286504278186,
+            0.9250769434649401
+          ]
+        },
+        "TE:receptions": {
+          "playerGames": 191,
+          "teamGames": 66,
+          "gameClusters": 63,
+          "baselineMAE": 1.1807009287500292,
+          "learnedMAE": 1.1867853225070495,
+          "meanGameMAEImprovement": 0.0017026237418491434,
+          "improvement95CI": [
+            -0.05932909337575211,
+            0.07380698585607773
+          ]
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "QB:passing_yards": {
+      "playerGames": 440,
+      "gameClusters": 177,
+      "baselineMAE": 57.46592091644009,
+      "learnedMAE": 53.2482450492259,
+      "improvement95CI": [
+        0.7224916862831406,
+        9.231566243900634
+      ],
+      "familywise95CI": [
+        -0.8049939939759774,
+        11.239602180879748
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": false
+    },
+    "QB:rushing_yards": {
+      "playerGames": 440,
+      "gameClusters": 177,
+      "baselineMAE": 7.595642292685492,
+      "learnedMAE": 7.275675226916051,
+      "improvement95CI": [
+        0.11908552955561175,
+        0.4841054131613284
+      ],
+      "familywise95CI": [
+        0.074427557525274,
+        0.5694671322741482
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": true
+    },
+    "RB:rushing_yards": {
+      "playerGames": 546,
+      "gameClusters": 176,
+      "baselineMAE": 19.282253719537813,
+      "learnedMAE": 19.083772152421055,
+      "improvement95CI": [
+        -0.8131010782360519,
+        0.8341791685785981
+      ],
+      "familywise95CI": [
+        -1.2252103532665999,
+        1.1152164690982695
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    },
+    "RB:receiving_yards": {
+      "playerGames": 546,
+      "gameClusters": 176,
+      "baselineMAE": 9.103122867651505,
+      "learnedMAE": 8.820004411051064,
+      "improvement95CI": [
+        0.11979329498055846,
+        0.417916953587449
+      ],
+      "familywise95CI": [
+        0.05877660605065457,
+        0.46819983272921123
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": true
+    },
+    "RB:receptions": {
+      "playerGames": 546,
+      "gameClusters": 176,
+      "baselineMAE": 1.0386953831112506,
+      "learnedMAE": 1.0057287989917734,
+      "improvement95CI": [
+        0.015786373012627652,
+        0.05120411885320902
+      ],
+      "familywise95CI": [
+        0.010007926280216035,
+        0.05762342577295345
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": true
+    },
+    "WR:receiving_yards": {
+      "playerGames": 892,
+      "gameClusters": 177,
+      "baselineMAE": 19.7444636823731,
+      "learnedMAE": 19.447565914125068,
+      "improvement95CI": [
+        -0.029495541263441106,
+        0.49110328853785407
+      ],
+      "familywise95CI": [
+        -0.12162160238835415,
+        0.5744475078913135
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    },
+    "WR:receptions": {
+      "playerGames": 892,
+      "gameClusters": 177,
+      "baselineMAE": 1.3689938541173141,
+      "learnedMAE": 1.347186390573371,
+      "improvement95CI": [
+        0.0014354320649944778,
+        0.03860339636515429
+      ],
+      "familywise95CI": [
+        -0.007093911983774386,
+        0.045027648554556064
+      ],
+      "accuracyPassed": true,
+      "bonferroniPassed": false
+    },
+    "TE:receiving_yards": {
+      "playerGames": 551,
+      "gameClusters": 176,
+      "baselineMAE": 12.929242931722133,
+      "learnedMAE": 12.740493191337674,
+      "improvement95CI": [
+        -0.13215138866700302,
+        0.5855315142710092
+      ],
+      "familywise95CI": [
+        -0.3142571139583493,
+        0.7317261443509403
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    },
+    "TE:receptions": {
+      "playerGames": 551,
+      "gameClusters": 176,
+      "baselineMAE": 1.0870226792653808,
+      "learnedMAE": 1.0849342375811355,
+      "improvement95CI": [
+        -0.02292703894291426,
+        0.03433335296805073
+      ],
+      "familywise95CI": [
+        -0.0353563255105156,
+        0.044249677303221484
+      ],
+      "accuracyPassed": false,
+      "bonferroniPassed": false
+    }
+  },
+  "predictionLedgerSHA256": "d889fdfee1f6b3307c081652cfe96603a550e24382da4b2e1998e18b598be7b1",
+  "limitations": [
+    "These are retrospective archives, not guaranteed publication-time snapshots.",
+    "The previously examined 2024 results are not a new untouched test; rolling folds test time consistency, not prospective performance.",
+    "Candidate zero-production outcomes are included. Final-week resting and roster changes may confound injury effects."
+  ]
+}

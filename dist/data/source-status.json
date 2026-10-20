@@ -1,0 +1,76 @@
+{
+  "asOf": "2026-10-20T22:11:13.803Z",
+  "season": 2026,
+  "currentCases": 10,
+  "currentProjections": 227,
+  "quotes": 21,
+  "conditionalQuotes": 20,
+  "latestStatsWeek": 6,
+  "latestLeagueReportWeek": 6,
+  "historicalScenarios": 66,
+  "watchlistPlayers": 65,
+  "watchlistTeams": 32,
+  "conditionalCases": 15,
+  "coverage": "Active pregame slate auto-ingests confirmed OUT, IR, and DOUBTFUL starter/rotational absences across all NFL teams, while Questionable designations populate the conditional what-if slate.",
+  "sources": [
+    {
+      "kind": "stats",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+      "retrievedAt": "2026-10-20T22:11:03.724Z",
+      "sha256": "0d29a199ddecacca64e6290cbb12f68823d05ef271de0f6a3aa768efd60fad76",
+      "rows": 6488
+    },
+    {
+      "kind": "injuries",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.csv",
+      "retrievedAt": "2026-10-20T22:11:03.938Z",
+      "sha256": "b51b2ca4e3f6f40b8a53fc00b6689ab1d7c561d546a7cb1900dd74ee675e9286",
+      "rows": 1789
+    },
+    {
+      "kind": "depth",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.csv",
+      "retrievedAt": "2026-10-20T22:11:07.568Z",
+      "sha256": "263cddf0432e3afa1bffbdbb11d5ffa3e624bed2fe65d1fd1c6e13eeff890b19",
+      "rows": 677875
+    },
+    {
+      "kind": "games",
+      "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+      "retrievedAt": "2026-10-20T22:11:07.872Z",
+      "sha256": "27ae862aac925ae852b4dad6cb60dd42b4db031d5db29ebfefed1efe3975ab2b",
+      "rows": 7548
+    },
+    {
+      "kind": "team_announcement",
+      "url": "https://www.therams.com/news/rams-injury-updates-cardinals-week-6-2026-blake-grupe-torn-acl-out-for-season-poona-ford-davante-adams-kobie-turner-trent-mcduffie-raiders",
+      "publishedAt": "2026-10-19T23:01:06.726Z",
+      "modifiedAt": "2026-10-19T23:04:16.851Z",
+      "retrievedAt": "2026-10-20T22:11:08.034Z",
+      "sha256": "83db9cedf9786f9ccf1ead647c54175120000ce32f43c69b6cd69fb186e58951"
+    },
+    {
+      "kind": "injury_watchlist",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries",
+      "retrievedAt": "2026-10-20T22:11:08.225Z",
+      "sha256": "7645978c35e27f7849bc9d03d53ccae85b5038f9a37d1424a33027799978cbde"
+    },
+    {
+      "kind": "sportsbook_odds_kambi",
+      "url": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/listView/american_football/nfl/all/all/matches.json?lang=en_US&market=US-PA&useCombined=true",
+      "retrievedAt": "2026-10-20T22:11:08.235Z",
+      "sha256": "5bf3e8ca0cd2f69e998e4415207a2341538d5e4f4ff0f7f9e4598288e157cafb",
+      "rows": 74
+    },
+    {
+      "kind": "dfs_lines_prizepicks",
+      "url": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
+      "retrievedAt": "2026-10-20T22:11:08.235Z",
+      "sha256": "f6b3e94e9a13e9d93ded058a1e1080cb349b9a49de172c305445ab85ed0fbde4",
+      "rows": 223
+    }
+  ],
+  "failures": [],
+  "validationStatus": "approved",
+  "oddsStatus": "Connected to live public BetRivers (Kambi CDN) and PrizePicks feeds (297 live market quotes fetched; 21 matched to active slate and 20 matched to conditional slate)."
+}

@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "trainingSeason": 2023,
+  "validationSeason": 2024,
+  "generatedAt": "2026-10-19T21:26:29.280Z",
+  "source": "nflverse weekly player statistics",
+  "sourceUrl": "https://nflreadr.nflverse.com/reference/load_player_stats.html",
+  "groups": {
+    "QB:passing_yards": {
+      "rate": 7.018498248686515,
+      "priorStrength": 50,
+      "referenceOpportunities": 28.86571879936809,
+      "trainingAppearances": 633,
+      "rmse": 90.06766829170819,
+      "residualExamples": 429
+    },
+    "QB:rushing_yards": {
+      "rate": 4.126477024070022,
+      "priorStrength": 20,
+      "referenceOpportunities": 3.9261168384879723,
+      "trainingAppearances": 582,
+      "rmse": 17.39765312823012,
+      "residualExamples": 389
+    },
+    "RB:rushing_yards": {
+      "rate": 4.152315052110029,
+      "priorStrength": 20,
+      "referenceOpportunities": 9.116822429906541,
+      "trainingAppearances": 1284,
+      "rmse": 29.75660255718984,
+      "residualExamples": 911
+    },
+    "RB:receiving_yards": {
+      "rate": 5.554015748031496,
+      "priorStrength": 15,
+      "referenceOpportunities": 2.9728464419475658,
+      "trainingAppearances": 1068,
+      "rmse": 18.070874875005114,
+      "residualExamples": 676
+    },
+    "RB:receptions": {
+      "rate": 0.7760629921259843,
+      "priorStrength": 15,
+      "referenceOpportunities": 2.9728464419475658,
+      "trainingAppearances": 1068,
+      "rmse": 1.8050901167049354,
+      "residualExamples": 676
+    },
+    "WR:rushing_yards": {
+      "rate": 5.995614035087719,
+      "priorStrength": 20,
+      "referenceOpportunities": 1.3734939759036144,
+      "trainingAppearances": 332,
+      "rmse": 12.412444350069215,
+      "residualExamples": 49
+    },
+    "WR:receiving_yards": {
+      "rate": 7.953713464302827,
+      "priorStrength": 15,
+      "referenceOpportunities": 4.8131918819188195,
+      "trainingAppearances": 2168,
+      "rmse": 31.888573177850457,
+      "residualExamples": 1579
+    },
+    "WR:receptions": {
+      "rate": 0.6300910397700048,
+      "priorStrength": 15,
+      "referenceOpportunities": 4.8131918819188195,
+      "trainingAppearances": 2168,
+      "rmse": 1.9938905023150952,
+      "residualExamples": 1579
+    },
+    "TE:rushing_yards": {
+      "rate": 4.10377358490566,
+      "priorStrength": 20,
+      "referenceOpportunities": 2.65,
+      "trainingAppearances": 40,
+      "rmse": 20.166862617567407,
+      "residualExamples": 13
+    },
+    "TE:receiving_yards": {
+      "rate": 7.261930010604454,
+      "priorStrength": 15,
+      "referenceOpportunities": 3.5186567164179103,
+      "trainingAppearances": 1072,
+      "rmse": 22.49278685271906,
+      "residualExamples": 749
+    },
+    "TE:receptions": {
+      "rate": 0.7123541887592789,
+      "priorStrength": 15,
+      "referenceOpportunities": 3.5186567164179103,
+      "trainingAppearances": 1072,
+      "rmse": 1.8005814693333844,
+      "residualExamples": 749
+    }
+  }
+}

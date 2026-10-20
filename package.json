@@ -1,0 +1,25 @@
+{
+  "name": "next-man-pregame",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "train": "node scripts/train.mjs",
+    "train:injuries": "node scripts/train-injuries.mjs",
+    "validate:model": "node scripts/validate-model.mjs",
+    "refresh:real": "node scripts/refresh-real-data.mjs",
+    "evaluate:forward": "node scripts/evaluate-forward.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/build.mjs && node scripts/serve.mjs",
+    "project": "node scripts/project.mjs",
+    "research:candidate": "node scripts/research-candidate.mjs",
+    "fetch:odds": "node scripts/fetch-odds.mjs",
+    "import:odds": "node scripts/import-odds.mjs",
+    "update": "node scripts/update.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

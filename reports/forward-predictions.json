@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "generatedAt": "2026-10-20T18:04:46.291Z",
+    "status": "pending",
+    "selectionRule": "Earliest valid snapshot per player/market/game/model. Source files remain immutable and are hash-verified. Different models are reported separately.",
+    "byModel": {
+      "503c9579413b0508ef8d8069b8c13b4cb4b4762c45287abc74069f5e0324dc3e": {
+        "predictions": 20,
+        "gradedRows": 0,
+        "baselineMAE": null,
+        "modelMAE": null
+      },
+      "b71dafb34618d525f9d0a39af058b9e841ea48185a70f5b7edfc6c5321eee624": {
+        "predictions": 20,
+        "gradedRows": 0,
+        "baselineMAE": null,
+        "modelMAE": null
+      }
+    },
+    "snapshotCount": 3,
+    "rejectedSnapshots": [
+      {
+        "file": "5368498faa75c0c64bdf2313c418d7b28eb9794fc4c5504f304187aee6522510.json",
+        "reason": "Invalid issue/capture chronology or source retrieved after information cutoff."
+      }
+    ],
+    "predictions": 40,
+    "gradedGames": 0,
+    "gradedRows": 0,
+    "pendingRows": 40,
+    "baselineMAE": null,
+    "modelMAE": null,
+    "note": "Research results only. No betting ROI is calculated without verified prices and bookmaker-specific void rules."
+  },
+  "rows": []
+}

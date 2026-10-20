@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "modelType": "cross-position L1 workload transfer with unbiased starter projections",
+  "trainingSeasons": [
+    2018,
+    2019,
+    2021,
+    2022
+  ],
+  "selectionSeason": 2023,
+  "holdoutSeason": 2024,
+  "trainedThrough": "2023 season",
+  "availableAfter": "2024-01-08T21:25:00.000Z",
+  "featureNames": [
+    "intercept",
+    "QB:role1",
+    "QB:role2",
+    "QB:role3",
+    "RB:role1",
+    "RB:role2",
+    "RB:role3",
+    "WR:role1",
+    "WR:role2",
+    "WR:role3",
+    "TE:role1",
+    "TE:role2",
+    "TE:role3",
+    "baseline/vacated",
+    "trend/vacated"
+  ],
+  "groups": {
+    "QB:carries": {
+      "coefficients": [
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lambda": 1,
+      "trainingEvents": 25,
+      "scale": 0.75,
+      "allowedPositions": [
+        "QB"
+      ],
+      "selectionMAE": 1.8171813875031404,
+      "baselineSelectionMAE": 2.4103650001794494,
+      "selectionEvents": 8
+    },
+    "QB:attempts": {
+      "coefficients": [
+        0,
+        0.86,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lambda": 1,
+      "trainingEvents": 25,
+      "scale": 0.75,
+      "allowedPositions": [
+        "QB"
+      ],
+      "selectionMAE": 13.517946380504611,
+      "baselineSelectionMAE": 17.25772529878333,
+      "selectionEvents": 8
+    },
+    "RB:carries": {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0.6,
+        0.32,
+        0.22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lambda": 1,
+      "trainingEvents": 49,
+      "scale": 0.75,
+      "allowedPositions": [
+        "RB"
+      ],
+      "selectionMAE": 3.981253658602992,
+      "baselineSelectionMAE": 4.836312400451967,
+      "selectionEvents": 14
+    },
+    "RB:targets": {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0.28,
+        0.28,
+        0.22,
+        0,
+        0,
+        0,
+        0.12,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lambda": 1,
+      "trainingEvents": 45,
+      "scale": 0.25,
+      "allowedPositions": [
+        "RB",
+        "WR",
+        "TE"
+      ],
+      "selectionMAE": 1.6798396055784572,
+      "baselineSelectionMAE": 1.678724556780727,
+      "selectionEvents": 12
+    },
+    "WR:targets": {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.12,
+        0.26,
+        0.06,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lambda": 1,
+      "trainingEvents": 93,
+      "scale": 0.5,
+      "allowedPositions": [
+        "RB",
+        "WR",
+        "TE"
+      ],
+      "selectionMAE": 1.515510826539008,
+      "baselineSelectionMAE": 1.537622541026917,
+      "selectionEvents": 22
+    },
+    "TE:targets": {
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.38,
+        0.32,
+        0.26,
+        0,
+        0
+      ],
+      "lambda": 1,
+      "trainingEvents": 40,
+      "scale": 0.75,
+      "allowedPositions": [
+        "RB",
+        "WR",
+        "TE"
+      ],
+      "selectionMAE": 1.5201928478509898,
+      "baselineSelectionMAE": 1.5588364733064533,
+      "selectionEvents": 12
+    }
+  },
+  "qbContext": {
+    "RB:receiving_yards": {
+      "multiplier": 0.9305311261433502,
+      "enabled": true,
+      "trainingPlayerGames": 85
+    },
+    "RB:receptions": {
+      "multiplier": 0.9895216495743487,
+      "enabled": true,
+      "trainingPlayerGames": 85
+    },
+    "WR:receiving_yards": {
+      "multiplier": 0.899917042390346,
+      "enabled": true,
+      "trainingPlayerGames": 126
+    },
+    "WR:receptions": {
+      "multiplier": 1.0027394293080507,
+      "enabled": true,
+      "trainingPlayerGames": 126
+    },
+    "TE:receiving_yards": {
+      "multiplier": 0.8700442450188257,
+      "enabled": true,
+      "trainingPlayerGames": 71
+    },
+    "TE:receptions": {
+      "multiplier": 0.9709175682686223,
+      "enabled": true,
+      "trainingPlayerGames": 71
+    }
+  },
+  "efficiencyContext": {
+    "QB:passing_yards:r1:lz0": 1,
+    "QB:passing_yards:r2:lz0": 1,
+    "QB:passing_yards:r3+:lz0": 0.85,
+    "QB:passing_yards:r1:lz1": 0.25,
+    "QB:passing_yards:r2:lz1": 0.25,
+    "QB:passing_yards:r3+:lz1": 0.25,
+    "QB:rushing_yards:r1:lz0": 1,
+    "QB:rushing_yards:r2:lz0": 1,
+    "QB:rushing_yards:r3+:lz0": 0.85,
+    "QB:rushing_yards:r1:lz1": 0.25,
+    "QB:rushing_yards:r2:lz1": 0.25,
+    "QB:rushing_yards:r3+:lz1": 0.25,
+    "RB:rushing_yards:r1:lz0": 1,
+    "RB:rushing_yards:r2:lz0": 1,
+    "RB:rushing_yards:r3+:lz0": 0.85,
+    "RB:rushing_yards:r1:lz1": 0.25,
+    "RB:rushing_yards:r2:lz1": 0.25,
+    "RB:rushing_yards:r3+:lz1": 0.25,
+    "RB:receiving_yards:r1:lz0": 1,
+    "RB:receiving_yards:r2:lz0": 1,
+    "RB:receiving_yards:r3+:lz0": 0.85,
+    "RB:receiving_yards:r1:lz1": 0.25,
+    "RB:receiving_yards:r2:lz1": 0.25,
+    "RB:receiving_yards:r3+:lz1": 0.25,
+    "RB:receptions:r1:lz0": 1,
+    "RB:receptions:r2:lz0": 1,
+    "RB:receptions:r3+:lz0": 0.85,
+    "RB:receptions:r1:lz1": 0.25,
+    "RB:receptions:r2:lz1": 0.25,
+    "RB:receptions:r3+:lz1": 0.25,
+    "WR:receiving_yards:r1:lz0": 1,
+    "WR:receiving_yards:r2:lz0": 1,
+    "WR:receiving_yards:r3+:lz0": 0.85,
+    "WR:receiving_yards:r1:lz1": 0.25,
+    "WR:receiving_yards:r2:lz1": 0.25,
+    "WR:receiving_yards:r3+:lz1": 0.25,
+    "WR:receptions:r1:lz0": 1,
+    "WR:receptions:r2:lz0": 1,
+    "WR:receptions:r3+:lz0": 0.85,
+    "WR:receptions:r1:lz1": 0.25,
+    "WR:receptions:r2:lz1": 0.25,
+    "WR:receptions:r3+:lz1": 0.25,
+    "TE:receiving_yards:r1:lz0": 1,
+    "TE:receiving_yards:r2:lz0": 1,
+    "TE:receiving_yards:r3+:lz0": 0.85,
+    "TE:receiving_yards:r1:lz1": 0.25,
+    "TE:receiving_yards:r2:lz1": 0.25,
+    "TE:receiving_yards:r3+:lz1": 0.25,
+    "TE:receptions:r1:lz0": 1,
+    "TE:receptions:r2:lz0": 1,
+    "TE:receptions:r3+:lz0": 0.85,
+    "TE:receptions:r1:lz1": 0.25,
+    "TE:receptions:r2:lz1": 0.25,
+    "TE:receptions:r3+:lz1": 0.25
+  },
+  "baselineEfficiencyPriors": {
+    "QB:passing_yards": {
+      "rate": 7.1687921285076746,
+      "strength": 50
+    },
+    "QB:rushing_yards": {
+      "rate": 4.366466789667896,
+      "strength": 20
+    },
+    "QB:receiving_yards": {
+      "rate": 3.1842105263157894,
+      "strength": 15
+    },
+    "QB:receptions": {
+      "rate": 0.6842105263157895,
+      "strength": 15
+    },
+    "RB:passing_yards": {
+      "rate": 6.205882352941177,
+      "strength": 50
+    },
+    "RB:rushing_yards": {
+      "rate": 4.315649811511489,
+      "strength": 20
+    },
+    "RB:receiving_yards": {
+      "rate": 5.890337751175716,
+      "strength": 15
+    },
+    "RB:receptions": {
+      "rate": 0.768134530426108,
+      "strength": 15
+    },
+    "WR:passing_yards": {
+      "rate": 13.184782608695652,
+      "strength": 50
+    },
+    "WR:rushing_yards": {
+      "rate": 6.258903335217637,
+      "strength": 20
+    },
+    "WR:receiving_yards": {
+      "rate": 8.000093259658204,
+      "strength": 15
+    },
+    "WR:receptions": {
+      "rate": 0.6274742953067077,
+      "strength": 15
+    },
+    "TE:passing_yards": {
+      "rate": 10.166666666666666,
+      "strength": 50
+    },
+    "TE:rushing_yards": {
+      "rate": 4.8933333333333335,
+      "strength": 20
+    },
+    "TE:receiving_yards": {
+      "rate": 7.416639392550893,
+      "strength": 15
+    },
+    "TE:receptions": {
+      "rate": 0.6841002814688748,
+      "strength": 15
+    }
+  },
+  "generatedAt": "2026-10-20T22:01:43.159Z",
+  "applicability": "Confirmed Out, IR, or Doubtful starter/rotational player with recent active usage. Questionable inputs are conditional counterfactuals. All affected teammates must be provided; allocations depend on the candidate set.",
+  "modelId": "159b0665ce8763950ee66c2932e5c1cfe32c9c27d3cf8229eb34ddb3de46a6a4"
+}

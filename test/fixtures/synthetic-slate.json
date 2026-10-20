@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "name": "Sample slate · fictional players",
+  "mode": "import",
+  "asOf": "2026-10-19T16:00:00Z",
+  "scenarios": [
+    {
+      "id": "demo-rb",
+      "team": "SEA",
+      "opponent": "ARI",
+      "kickoff": "2026-10-25T17:00:00Z",
+      "injury": {
+        "player": "Marcus Hale",
+        "position": "RB",
+        "status": "OUT",
+        "description": "Ankle · fictional example",
+        "absenceProbability": 1,
+        "vacated": {
+          "carries": 16,
+          "targets": 4
+        },
+        "expectedReturn": "Not reported",
+        "source": "Fictional demonstration — not an NFL injury report",
+        "updatedAt": "2026-10-19T16:00:00Z"
+      },
+      "players": [
+        {
+          "id": "owen",
+          "name": "Owen Brooks",
+          "position": "RB",
+          "allocation": {
+            "carries": 0.65,
+            "targets": 0.35
+          },
+          "markets": [
+            {
+              "key": "rushing_yards",
+              "opportunities": 5,
+              "rate": 4.25,
+              "line": 48.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            },
+            {
+              "key": "receiving_yards",
+              "opportunities": 2,
+              "rate": 6.3,
+              "line": 19.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            },
+            {
+              "key": "receptions",
+              "opportunities": 2,
+              "rate": 0.76,
+              "line": 2.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Lead committee role: 65% of vacated carries and 35% of targets."
+        },
+        {
+          "id": "cam",
+          "name": "Cam Ellis",
+          "position": "RB",
+          "allocation": {
+            "carries": 0.35,
+            "targets": 0.15
+          },
+          "markets": [
+            {
+              "key": "rushing_yards",
+              "opportunities": 3,
+              "rate": 3.95,
+              "line": 29.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Remaining 35% of carries; not a full replacement workload."
+        },
+        {
+          "id": "nico",
+          "name": "Nico Grant",
+          "position": "WR",
+          "allocation": {
+            "targets": 0.3
+          },
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 6,
+              "rate": 8.1,
+              "line": 55.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Some short targets shift to the slot receiver."
+        },
+        {
+          "id": "caleb",
+          "name": "Caleb Stone",
+          "position": "TE",
+          "allocation": {
+            "targets": 0.2
+          },
+          "markets": [
+            {
+              "key": "receptions",
+              "opportunities": 3,
+              "rate": 0.68,
+              "line": 3.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Receives the remaining 20% of vacated targets."
+        }
+      ]
+    },
+    {
+      "id": "demo-wr",
+      "team": "BUF",
+      "opponent": "MIA",
+      "kickoff": "2026-10-25T17:00:00Z",
+      "injury": {
+        "player": "Darius Cole",
+        "position": "WR",
+        "status": "QUESTIONABLE",
+        "description": "Hamstring · fictional example",
+        "absenceProbability": 0.5,
+        "vacated": {
+          "targets": 9
+        },
+        "expectedReturn": "Not reported",
+        "source": "Fictional demonstration — not an NFL injury report",
+        "updatedAt": "2026-10-19T16:00:00Z"
+      },
+      "players": [
+        {
+          "id": "jalen",
+          "name": "Jalen Mercer",
+          "position": "WR",
+          "allocation": {
+            "targets": 0.45
+          },
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 5,
+              "rate": 8.4,
+              "line": 51.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            },
+            {
+              "key": "receptions",
+              "opportunities": 5,
+              "rate": 0.66,
+              "line": 4.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "45% of vacated targets if the starter sits; 50% absence is an editable analyst assumption."
+        },
+        {
+          "id": "evan",
+          "name": "Evan Reed",
+          "position": "TE",
+          "allocation": {
+            "targets": 0.35
+          },
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 4,
+              "rate": 7.4,
+              "line": 38.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Established tight end gains more targets than the depth-chart backup."
+        },
+        {
+          "id": "miles",
+          "name": "Miles Carter",
+          "position": "RB",
+          "allocation": {
+            "targets": 0.2
+          },
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 3,
+              "rate": 6.2,
+              "line": 23.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Check-down role gains 20% of vacated targets."
+        }
+      ]
+    },
+    {
+      "id": "demo-qb",
+      "team": "PIT",
+      "opponent": "CIN",
+      "kickoff": "2026-10-25T17:00:00Z",
+      "injury": {
+        "player": "Adrian Fox",
+        "position": "QB",
+        "status": "OUT",
+        "description": "Shoulder · fictional example",
+        "absenceProbability": 1,
+        "vacated": {
+          "attempts": 30,
+          "carries": 3
+        },
+        "expectedReturn": "Not reported",
+        "source": "Fictional demonstration — not an NFL injury report",
+        "updatedAt": "2026-10-19T16:00:00Z"
+      },
+      "context": {
+        "receiving_yards": 0.86,
+        "receptions": 0.93
+      },
+      "players": [
+        {
+          "id": "theo",
+          "name": "Theo Bennett",
+          "position": "QB",
+          "allocation": {
+            "attempts": 1,
+            "carries": 1
+          },
+          "markets": [
+            {
+              "key": "passing_yards",
+              "opportunities": 0,
+              "rate": 6.45,
+              "line": 204.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            },
+            {
+              "key": "rushing_yards",
+              "opportunities": 0,
+              "rate": 4.8,
+              "line": 18.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Inherits all 30 vacated attempts and 3 carries; own efficiency replaces the starter’s."
+        },
+        {
+          "id": "devon",
+          "name": "Devon Price",
+          "position": "WR",
+          "allocation": {},
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 8,
+              "rate": 8.2,
+              "line": 64.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Targets held constant; 14% receiving-yard efficiency reduction under the backup QB."
+        },
+        {
+          "id": "noah",
+          "name": "Noah Hayes",
+          "position": "TE",
+          "allocation": {},
+          "markets": [
+            {
+              "key": "receptions",
+              "opportunities": 5,
+              "rate": 0.72,
+              "line": 3.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Targets held constant; 7% catch-efficiency reduction is a scenario assumption."
+        }
+      ]
+    },
+    {
+      "id": "demo-te",
+      "team": "KC",
+      "opponent": "DEN",
+      "kickoff": "2026-10-25T17:00:00Z",
+      "injury": {
+        "player": "Lucas Ward",
+        "position": "TE",
+        "status": "DOUBTFUL",
+        "description": "Knee · fictional example",
+        "absenceProbability": 0.8,
+        "vacated": {
+          "targets": 7
+        },
+        "expectedReturn": "Not reported",
+        "source": "Fictional demonstration — not an NFL injury report",
+        "updatedAt": "2026-10-19T16:00:00Z"
+      },
+      "players": [
+        {
+          "id": "finn",
+          "name": "Finn Marshall",
+          "position": "TE",
+          "allocation": {
+            "targets": 0.4
+          },
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 2,
+              "rate": 6.9,
+              "line": 24.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            },
+            {
+              "key": "receptions",
+              "opportunities": 2,
+              "rate": 0.7,
+              "line": 3.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Backup inherits only 40% of targets because part of his role is blocking."
+        },
+        {
+          "id": "isaiah",
+          "name": "Isaiah Lane",
+          "position": "WR",
+          "allocation": {
+            "targets": 0.6
+          },
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 6,
+              "rate": 8.8,
+              "line": 67.5,
+              "overOdds": -110,
+              "underOdds": -110,
+              "book": "Example Book",
+              "source": "Synthetic demonstration quote",
+              "updatedAt": "2026-10-19T16:00:00Z",
+              "opponentMultiplier": 1
+            }
+          ],
+          "assumption": "Starting receiver absorbs the remaining 60% of targets."
+        }
+      ]
+    }
+  ]
+}
