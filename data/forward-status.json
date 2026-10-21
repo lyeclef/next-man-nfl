@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-20T22:26:13.244Z",
+  "generatedAt": "2026-10-21T14:48:49.012Z",
   "status": "active",
-  "snapshotSHA256": "e5967210a912254734a6d3466954275cd8080a9a73d8cb5e01705e1cf5735039",
-  "cases": 10,
-  "predictions": 227,
-  "quotedPredictions": 21,
-  "actionableSignals": 20,
+  "snapshotSHA256": "a130bed1cde7d973cbcf27963cf19f49f27e07bcfa44a9f35f4ff1e00cb86c71",
+  "cases": 9,
+  "predictions": 209,
+  "quotedPredictions": 20,
+  "actionableSignals": 19,
   "gradedGames": 0,
   "note": "Timestamped pregame predictions and live sportsbook quotes are frozen locally in the forward ledger."
 }

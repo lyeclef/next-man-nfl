@@ -7,15 +7,24 @@ const projectRoot = path.resolve(fileURLToPath(new URL('../', import.meta.url)))
 const root = path.resolve(projectRoot, 'dist');
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8' };
 let activeRefresh = null;
-export function runLiveUpdate() {
-  if (activeRefresh) return activeRefresh;
-  activeRefresh = new Promise((resolve, reject) => {
-    execFile(process.execPath, [path.join(projectRoot, 'scripts/update.mjs')], { cwd: projectRoot, timeout: 180000 }, (err, stdout, stderr) => {
-      activeRefresh = null;
+function execStep(script) {
+  return new Promise((resolve, reject) => {
+    execFile(process.execPath, ['--max-old-space-size=384', path.join(projectRoot, script)], { cwd: projectRoot, timeout: 180000 }, (err, stdout, stderr) => {
       if (err) reject(new Error(stderr || err.message));
       else resolve(stdout);
     });
   });
+}
+export function runLiveUpdate() {
+  if (activeRefresh) return activeRefresh;
+  activeRefresh = (async () => {
+    try {
+      await execStep('scripts/refresh-real-data.mjs');
+      return await execStep('scripts/build.mjs');
+    } finally {
+      activeRefresh = null;
+    }
+  })();
   return activeRefresh;
 }
 export function createServer() { return http.createServer(async (req, res) => {

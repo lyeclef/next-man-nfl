@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "name": "2026 conditional absence scenarios",
   "mode": "sourced",
-  "asOf": "2026-10-20T22:11:13.803Z",
+  "asOf": "2026-10-21T14:48:49.012Z",
   "scenarios": [
     {
       "id": "what-if-espn-4870808",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "ARI",
       "opponent": "DEN",
       "kickoff": "2026-10-25T20:05:00.000Z",
@@ -390,7 +390,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:49:07.740Z",
+              "updatedAt": "2026-10-21T14:24:22.623Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0632
             },
@@ -403,7 +403,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:47:51.673Z",
+              "updatedAt": "2026-10-21T14:20:37.378Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.958
             },
@@ -453,12 +453,12 @@
               "key": "receptions",
               "opportunities": 10.12751677852349,
               "rate": 0.7414298986321601,
-              "line": 7.5,
-              "overOdds": -119,
-              "underOdds": -119,
-              "book": "PrizePicks",
-              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:49:07.356Z",
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9397
             }
@@ -817,7 +817,7 @@
     },
     {
       "id": "what-if-espn-4360939",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "BAL",
       "opponent": "CIN",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -1596,7 +1596,7 @@
     },
     {
       "id": "what-if-espn-3915416",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "BUF",
       "opponent": "BAL",
       "kickoff": "2026-11-01T18:00:00.000Z",
@@ -2340,7 +2340,7 @@
     },
     {
       "id": "what-if-espn-4608686",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "CHI",
       "opponent": "NE",
       "kickoff": "2026-10-23T00:15:00.000Z",
@@ -2671,12 +2671,12 @@
               "key": "rushing_yards",
               "opportunities": 14.413738649822344,
               "rate": 3.9414124528778722,
-              "line": 62.5,
-              "overOdds": -117,
-              "underOdds": -114,
+              "line": 60.5,
+              "overOdds": -114,
+              "underOdds": -117,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:11:08.235Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9832
             },
@@ -3145,7 +3145,7 @@
     },
     {
       "id": "what-if-espn-4685702",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "CLE",
       "opponent": "TEN",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -3409,22 +3409,6 @@
           }
         },
         {
-          "id": "00-0040162",
-          "name": "Dylan Sampson",
-          "position": "RB",
-          "depthRank": 4,
-          "baseline": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          }
-        },
-        {
           "id": "00-0036630",
           "name": "Tylan Wallace",
           "position": "WR",
@@ -3492,12 +3476,12 @@
               "key": "receiving_yards",
               "opportunities": 4.475720489538097,
               "rate": 5.61804419134065,
-              "line": 32.5,
+              "line": 30.5,
               "overOdds": -119,
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-19T20:02:32.548Z",
+              "updatedAt": "2026-10-21T11:54:26.923Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0528
             },
@@ -3510,7 +3494,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:50:55.154Z",
+              "updatedAt": "2026-10-21T13:37:09.952Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0584
             }
@@ -3979,7 +3963,7 @@
     },
     {
       "id": "what-if-espn-4035538",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "HOU",
       "opponent": "NYG",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -4829,7 +4813,7 @@
     },
     {
       "id": "what-if-espn-4431459",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "IND",
       "opponent": "MIN",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -5608,7 +5592,7 @@
     },
     {
       "id": "what-if-espn-4428331",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "KC",
       "opponent": "SEA",
       "kickoff": "2026-10-26T00:20:00.000Z",
@@ -5984,12 +5968,12 @@
               "key": "receptions",
               "opportunities": 4.955783655744177,
               "rate": 0.7367974114063006,
-              "line": 4.5,
-              "overOdds": -119,
-              "underOdds": -119,
-              "book": "PrizePicks",
-              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T18:07:52.527Z",
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0071
             }
@@ -6361,7 +6345,7 @@
     },
     {
       "id": "what-if-espn-4686612",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "LAC",
       "opponent": "LA",
       "kickoff": "2026-11-01T21:05:00.000Z",
@@ -7121,7 +7105,7 @@
     },
     {
       "id": "what-if-espn-4429205",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "MIN",
       "opponent": "IND",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -7420,12 +7404,12 @@
               "key": "receiving_yards",
               "opportunities": 5.302803000394788,
               "rate": 7.493232186169282,
-              "line": 37.5,
+              "line": 38.5,
               "overOdds": -119,
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:40:07.611Z",
+              "updatedAt": "2026-10-21T13:55:52.253Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0575
             },
@@ -7438,7 +7422,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:40:07.787Z",
+              "updatedAt": "2026-10-21T14:03:37.534Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9714
             }
@@ -7923,7 +7907,7 @@
     },
     {
       "id": "what-if-espn-4036133",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "MIN",
       "opponent": "IND",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -8767,7 +8751,7 @@
     },
     {
       "id": "what-if-espn-4047646",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "NE",
       "opponent": "CHI",
       "kickoff": "2026-10-23T00:15:00.000Z",
@@ -8791,7 +8775,7 @@
         },
         "expectedReturn": "Game-time decision / monitor official actives",
         "source": "https://www.espn.com/nfl/player/_/id/4047646/aj-brown",
-        "updatedAt": "2026-10-20T19:42:00.000Z",
+        "updatedAt": "2026-10-20T22:01:00.000Z",
         "statusBasis": "Conditional if absent. Questionable/watchlist listing; evaluated at 100% absence counterfactual.",
         "timestampKind": "publication"
       },
@@ -9099,11 +9083,11 @@
               "opportunities": 3.0975128306356092,
               "rate": 7.857192817674038,
               "line": 21.5,
-              "overOdds": -112,
-              "underOdds": -118,
+              "overOdds": -114,
+              "underOdds": -117,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:11:08.235Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.118
             },
@@ -9141,11 +9125,11 @@
               "opportunities": 2.016975917883932,
               "rate": 10.708391620619713,
               "line": 19.5,
-              "overOdds": -115,
-              "underOdds": -115,
+              "overOdds": -117,
+              "underOdds": -114,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:11:08.235Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.118
             },
@@ -9183,11 +9167,11 @@
               "opportunities": 4.31741018555073,
               "rate": 8.717728738331077,
               "line": 33.5,
-              "overOdds": -115,
-              "underOdds": -115,
+              "overOdds": -117,
+              "underOdds": -114,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:11:08.235Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.118
             },
@@ -9546,7 +9530,7 @@
     },
     {
       "id": "what-if-espn-4429148",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "NYG",
       "opponent": "HOU",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -9879,7 +9863,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T19:49:07.014Z",
+              "updatedAt": "2026-10-21T14:34:52.204Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9935
             }
@@ -10335,7 +10319,7 @@
     },
     {
       "id": "what-if-espn-4040655",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "NYG",
       "opponent": "HOU",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -10668,7 +10652,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T19:49:07.014Z",
+              "updatedAt": "2026-10-21T14:34:52.204Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9935
             }
@@ -11124,7 +11108,7 @@
     },
     {
       "id": "what-if-espn-16737",
-      "asOf": "2026-10-20T22:11:13.803Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "SF",
       "opponent": "ATL",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -11471,12 +11455,12 @@
               "key": "receiving_yards",
               "opportunities": 6.924990130280299,
               "rate": 8.482133116387224,
-              "line": 70.5,
-              "overOdds": -119,
-              "underOdds": -119,
-              "book": "PrizePicks",
-              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:14:24.505Z",
+              "line": 68.5,
+              "overOdds": -114,
+              "underOdds": -117,
+              "book": "BetRivers (Kambi)",
+              "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823696.json?lang=en_US&market=US-PA&includeParticipants=true",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9637
             },
@@ -11489,7 +11473,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:15:29.869Z",
+              "updatedAt": "2026-10-21T13:49:25.541Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0183
             }

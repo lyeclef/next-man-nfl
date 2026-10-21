@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "2024 historical injury holdout",
   "mode": "historical",
-  "asOf": "2026-10-20T22:26:13.244Z",
+  "asOf": "2026-10-21T14:48:49.012Z",
   "scenarios": [
     {
       "id": "2024:18:KC",

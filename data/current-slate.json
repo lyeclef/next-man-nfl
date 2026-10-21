@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "name": "2026 sourced pregame slate",
   "mode": "sourced",
-  "asOf": "2026-10-20T22:26:13.244Z",
+  "asOf": "2026-10-21T14:48:49.012Z",
   "scenarios": [
     {
       "id": "2026-week7-la-adams",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "LA",
       "opponent": "LV",
       "kickoff": "2026-10-25T20:25:00.000Z",
@@ -336,6 +336,48 @@
       ],
       "players": [
         {
+          "id": "00-0040590",
+          "nflverseId": "00-0040590",
+          "name": "Konata Mumpfield",
+          "position": "WR",
+          "depthRank": 4,
+          "lastOpportunities": {
+            "carries": 0,
+            "targets": 3,
+            "attempts": 0
+          },
+          "allocation": {},
+          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 3.9356246590289143,
+              "rate": 8.103496513616312,
+              "line": 18.5,
+              "overOdds": -119,
+              "underOdds": -119,
+              "book": "PrizePicks",
+              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
+              "updatedAt": "2026-10-21T14:05:55.250Z",
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 1.0959
+            },
+            {
+              "key": "receptions",
+              "opportunities": 3.9356246590289143,
+              "rate": 0.5659349803310556,
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 1.0082
+            }
+          ]
+        },
+        {
           "id": "00-0033110",
           "nflverseId": "00-0033110",
           "name": "Tyler Higbee",
@@ -353,12 +395,12 @@
               "key": "receiving_yards",
               "opportunities": 5.8874851954204495,
               "rate": 8.220228354482462,
-              "line": 30.5,
+              "line": 34.5,
               "overOdds": -119,
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T20:51:51.841Z",
+              "updatedAt": "2026-10-21T01:54:57.290Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0959
             },
@@ -366,12 +408,12 @@
               "key": "receptions",
               "opportunities": 5.8874851954204495,
               "rate": 0.7681310529055506,
-              "line": 3.5,
+              "line": 4,
               "overOdds": -119,
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T20:51:51.882Z",
+              "updatedAt": "2026-10-21T04:10:43.741Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0082
             }
@@ -450,48 +492,6 @@
               "key": "receptions",
               "opportunities": 0.3868930122384524,
               "rate": 0.6124773193882715,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0082
-            }
-          ]
-        },
-        {
-          "id": "00-0040590",
-          "nflverseId": "00-0040590",
-          "name": "Konata Mumpfield",
-          "position": "WR",
-          "depthRank": 4,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 3,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 3.9356246590289143,
-              "rate": 8.103496513616312,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0959
-            },
-            {
-              "key": "receptions",
-              "opportunities": 3.9356246590289143,
-              "rate": 0.5659349803310556,
               "line": null,
               "overOdds": null,
               "underOdds": null,
@@ -743,7 +743,7 @@
     },
     {
       "id": "2026-week7-CIN-00-0034613",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "CIN",
       "opponent": "BAL",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -1047,7 +1047,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:06:22.025Z",
+              "updatedAt": "2026-10-21T14:00:22.479Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9937
             },
@@ -1089,7 +1089,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:30:51.446Z",
+              "updatedAt": "2026-10-21T14:00:22.386Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9937
             },
@@ -1131,7 +1131,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:06:21.914Z",
+              "updatedAt": "2026-10-21T13:52:21.788Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9937
             },
@@ -1474,7 +1474,7 @@
     },
     {
       "id": "2026-week7-GB-00-0038090",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "GB",
       "opponent": "DET",
       "kickoff": "2026-10-25T20:25:00.000Z",
@@ -1858,7 +1858,7 @@
               "underOdds": -114,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823708.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0611
             },
@@ -1871,7 +1871,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:50:23.020Z",
+              "updatedAt": "2026-10-21T13:33:52.688Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0501
             }
@@ -1896,11 +1896,11 @@
               "opportunities": 1.5791551519936835,
               "rate": 8.000073626045952,
               "line": 20.5,
-              "overOdds": -112,
-              "underOdds": -118,
+              "overOdds": -114,
+              "underOdds": -117,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823708.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0611
             },
@@ -1937,12 +1937,12 @@
               "key": "receiving_yards",
               "opportunities": 6.97749703908409,
               "rate": 6.517432346238684,
-              "line": 45.5,
-              "overOdds": -120,
-              "underOdds": -112,
+              "line": 46.5,
+              "overOdds": -112,
+              "underOdds": -118,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823708.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0611
             },
@@ -2372,7 +2372,7 @@
     },
     {
       "id": "2026-week7-KC-00-0038104",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "KC",
       "opponent": "SEA",
       "kickoff": "2026-10-26T00:20:00.000Z",
@@ -2764,12 +2764,12 @@
               "key": "receptions",
               "opportunities": 4.955783655744177,
               "rate": 0.7367974114063006,
-              "line": 4.5,
-              "overOdds": -119,
-              "underOdds": -119,
-              "book": "PrizePicks",
-              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T18:07:52.527Z",
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0071
             }
@@ -3183,7 +3183,7 @@
     },
     {
       "id": "2026-week7-NE-00-0037816",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "NE",
       "opponent": "CHI",
       "kickoff": "2026-10-23T00:15:00.000Z",
@@ -3531,11 +3531,11 @@
               "opportunities": 5.79747335175681,
               "rate": 9.00003885819092,
               "line": 34.5,
-              "overOdds": -113,
-              "underOdds": -117,
+              "overOdds": -115,
+              "underOdds": -115,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.118
             },
@@ -3573,11 +3573,11 @@
               "opportunities": 3.0975128306356092,
               "rate": 7.857192817674038,
               "line": 21.5,
-              "overOdds": -112,
-              "underOdds": -118,
+              "overOdds": -114,
+              "underOdds": -117,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.118
             },
@@ -3615,11 +3615,11 @@
               "opportunities": 4.31741018555073,
               "rate": 8.717728738331077,
               "line": 33.5,
-              "overOdds": -115,
-              "underOdds": -115,
+              "overOdds": -117,
+              "underOdds": -114,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823560.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.118
             },
@@ -4020,7 +4020,7 @@
     },
     {
       "id": "2026-week7-PHI-00-0036389",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "PHI",
       "opponent": "DAL",
       "kickoff": "2026-10-27T00:15:00.000Z",
@@ -4399,12 +4399,12 @@
               "key": "passing_yards",
               "opportunities": 17.76549545992894,
               "rate": 6.0362063834250925,
-              "line": 206.5,
+              "line": 209.5,
               "overOdds": -115,
               "underOdds": -115,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823704.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0973
             },
@@ -4412,12 +4412,12 @@
               "key": "rushing_yards",
               "opportunities": 0.3947887879984209,
               "rate": 4.158539799683711,
-              "line": 4.5,
-              "overOdds": -119,
-              "underOdds": -119,
-              "book": "PrizePicks",
-              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:25:07.089Z",
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0761
             }
@@ -4483,12 +4483,12 @@
               "key": "receiving_yards",
               "opportunities": 8.411764705882353,
               "rate": 6.570299715258232,
-              "line": 39.5,
-              "overOdds": -117,
-              "underOdds": -114,
+              "line": 40.5,
+              "overOdds": -115,
+              "underOdds": -115,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823704.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0806
             },
@@ -5015,7 +5015,7 @@
     },
     {
       "id": "2026-week7-PIT-00-0039739",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "PIT",
       "opponent": "NO",
       "kickoff": "2026-10-25T13:30:00.000Z",
@@ -5343,6 +5343,22 @@
           }
         },
         {
+          "id": "00-0036252",
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "depthRank": 7,
+          "baseline": {
+            "carries": 0,
+            "targets": 1.4508487958941965,
+            "attempts": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          }
+        },
+        {
           "id": "00-0039626",
           "name": "Cole Burgess",
           "position": "WR",
@@ -5383,7 +5399,7 @@
               "underOdds": -113,
               "book": "BetRivers (Kambi)",
               "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823697.json?lang=en_US&market=US-PA&includeParticipants=true",
-              "updatedAt": "2026-10-20T22:26:07.733Z",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0679
             },
@@ -5475,6 +5491,48 @@
               "key": "receptions",
               "opportunities": 0.5223055665219107,
               "rate": 0.6340063572000342,
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 1.029
+            }
+          ]
+        },
+        {
+          "id": "00-0036252",
+          "nflverseId": "00-0036252",
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "depthRank": 7,
+          "lastOpportunities": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "allocation": {},
+          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
+          "markets": [
+            {
+              "key": "receiving_yards",
+              "opportunities": 1.4508487958941965,
+              "rate": 6.291724953953044,
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 1.0679
+            },
+            {
+              "key": "receptions",
+              "opportunities": 1.4508487958941965,
+              "rate": 0.558838101233359,
               "line": null,
               "overOdds": null,
               "underOdds": null,
@@ -5784,7 +5842,7 @@
     },
     {
       "id": "2026-week7-SF-00-0035719",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "SF",
       "opponent": "ATL",
       "kickoff": "2026-10-25T17:00:00.000Z",
@@ -6147,12 +6205,12 @@
               "key": "receiving_yards",
               "opportunities": 6.924990130280299,
               "rate": 8.482133116387224,
-              "line": 70.5,
-              "overOdds": -119,
-              "underOdds": -119,
-              "book": "PrizePicks",
-              "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:14:24.505Z",
+              "line": 68.5,
+              "overOdds": -114,
+              "underOdds": -117,
+              "book": "BetRivers (Kambi)",
+              "source": "https://eu-offering-api.kambicdn.com/offering/v2018/rsiuspa/betoffer/event/1028823696.json?lang=en_US&market=US-PA&includeParticipants=true",
+              "updatedAt": "2026-10-21T14:48:43.825Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9637
             },
@@ -6165,7 +6223,7 @@
               "underOdds": -119,
               "book": "PrizePicks",
               "source": "https://partner-api.prizepicks.com/projections?league_id=9&per_page=250&single_stat=true",
-              "updatedAt": "2026-10-20T21:15:29.869Z",
+              "updatedAt": "2026-10-21T13:49:25.541Z",
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 1.0183
             }
@@ -6495,7 +6553,7 @@
     },
     {
       "id": "2026-week8-WAS-00-0035659",
-      "asOf": "2026-10-20T22:26:13.244Z",
+      "asOf": "2026-10-21T14:48:49.012Z",
       "team": "WAS",
       "opponent": "PHI",
       "kickoff": "2026-11-02T01:20:00.000Z",
@@ -6563,6 +6621,22 @@
           "last": {
             "carries": 0,
             "targets": 7,
+            "attempts": 0
+          }
+        },
+        {
+          "id": "00-0040242",
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "depthRank": 1,
+          "baseline": {
+            "carries": 7.353730754046583,
+            "targets": 0.909198578760363,
+            "attempts": 0
+          },
+          "last": {
+            "carries": 0,
+            "targets": 0,
             "attempts": 0
           }
         },
@@ -7029,6 +7103,61 @@
           ]
         },
         {
+          "id": "00-0040242",
+          "nflverseId": "00-0040242",
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "depthRank": 1,
+          "lastOpportunities": {
+            "carries": 0,
+            "targets": 0,
+            "attempts": 0
+          },
+          "allocation": {},
+          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
+          "markets": [
+            {
+              "key": "rushing_yards",
+              "opportunities": 7.353730754046583,
+              "rate": 3.717169427631013,
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 0.9696
+            },
+            {
+              "key": "receiving_yards",
+              "opportunities": 0.909198578760363,
+              "rate": 6.517753313381786,
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 1.0138
+            },
+            {
+              "key": "receptions",
+              "opportunities": 0.909198578760363,
+              "rate": 0.726100897819581,
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "book": null,
+              "source": null,
+              "updatedAt": null,
+              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+              "opponentMultiplier": 0.9714
+            }
+          ]
+        },
+        {
           "id": "00-0037256",
           "nflverseId": "00-0037256",
           "name": "Rachaad White",
@@ -7248,766 +7377,6 @@
               "updatedAt": null,
               "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
               "opponentMultiplier": 0.9696
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2026-week8-WAS-00-0040242",
-      "asOf": "2026-10-20T22:26:13.244Z",
-      "team": "WAS",
-      "opponent": "PHI",
-      "kickoff": "2026-11-02T01:20:00.000Z",
-      "gameId": "2026_08_PHI_WAS",
-      "season": 2026,
-      "week": 8,
-      "allocationMode": "learned",
-      "injuryModelId": "159b0665ce8763950ee66c2932e5c1cfe32c9c27d3cf8229eb34ddb3de46a6a4",
-      "injury": {
-        "player": "Jacory Croskey-Merritt",
-        "nflverseId": "00-0040242",
-        "position": "RB",
-        "status": "IR",
-        "description": "Groin",
-        "absenceProbability": 1,
-        "conditionalOnly": false,
-        "vacated": {
-          "carries": 7.353730754046583,
-          "targets": 0.909198578760363,
-          "attempts": 0
-        },
-        "expectedReturn": "Monitor weekly injury report",
-        "source": "https://www.espn.com/nfl/player/_/id/4575131/jacory-croskey-merritt",
-        "updatedAt": "2026-10-19T20:28:00.000Z",
-        "statusBasis": "Auto-ingested IR listing (The Commanders placed Croskey-Merritt (groin) on injured reserve Monday.)",
-        "timestampKind": "publication"
-      },
-      "historyCutoff": {
-        "weeks": [
-          3,
-          4,
-          5,
-          6
-        ],
-        "depthAt": "2026-10-19T14:35:37Z",
-        "source": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv"
-      },
-      "workloadCandidates": [
-        {
-          "id": "00-0039910",
-          "name": "Jayden Daniels",
-          "position": "QB",
-          "depthRank": 1,
-          "baseline": {
-            "carries": 6.058823529411765,
-            "targets": 0,
-            "attempts": 33.82352941176471
-          },
-          "last": {
-            "carries": 4,
-            "targets": 0,
-            "attempts": 40
-          }
-        },
-        {
-          "id": "00-0037809",
-          "name": "Chig Okonkwo",
-          "position": "TE",
-          "depthRank": 1,
-          "baseline": {
-            "carries": 0,
-            "targets": 6.0091324200913245,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 7,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0031588",
-          "name": "Stefon Diggs",
-          "position": "WR",
-          "depthRank": 2,
-          "baseline": {
-            "carries": 0,
-            "targets": 7.534642662302237,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 7,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0039912",
-          "name": "Ben Sinnott",
-          "position": "TE",
-          "depthRank": 2,
-          "baseline": {
-            "carries": 0,
-            "targets": 0.13541255428345833,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0037256",
-          "name": "Rachaad White",
-          "position": "RB",
-          "depthRank": 2,
-          "baseline": {
-            "carries": 5.781287011448875,
-            "targets": 2.385708645874457,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 7,
-            "targets": 5,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0041040",
-          "name": "Antonio Williams",
-          "position": "WR",
-          "depthRank": 3,
-          "baseline": {
-            "carries": 0,
-            "targets": 4.49743387287801,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 4,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0041117",
-          "name": "Athan Kaliakmanis",
-          "position": "QB",
-          "depthRank": 3,
-          "baseline": {
-            "carries": 0.5803395183576786,
-            "targets": 0,
-            "attempts": 6.383734701934465
-          },
-          "last": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0036628",
-          "name": "John Bates",
-          "position": "TE",
-          "depthRank": 3,
-          "baseline": {
-            "carries": 0,
-            "targets": 1,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 1,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0033699",
-          "name": "Austin Ekeler",
-          "position": "RB",
-          "depthRank": 3,
-          "baseline": {
-            "carries": 1.9976312672720093,
-            "targets": 1.4528227398341886,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 1,
-            "targets": 2,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0037742",
-          "name": "Treylon Burks",
-          "position": "WR",
-          "depthRank": 4,
-          "baseline": {
-            "carries": 0,
-            "targets": 4.601658112909593,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 6,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0039686",
-          "name": "Colson Yankoff",
-          "position": "TE",
-          "depthRank": 4,
-          "baseline": {
-            "carries": 0,
-            "targets": 0.4642716146861428,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0033955",
-          "name": "Jeremy McNichols",
-          "position": "RB",
-          "depthRank": 4,
-          "baseline": {
-            "carries": 1.9739439399921044,
-            "targets": 0,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 5,
-            "targets": 0,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0036626",
-          "name": "Dyami Brown",
-          "position": "WR",
-          "depthRank": 5,
-          "baseline": {
-            "carries": 0,
-            "targets": 1.856691669956573,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 1,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0039355",
-          "name": "Luke McCaffrey",
-          "position": "WR",
-          "depthRank": 6,
-          "baseline": {
-            "carries": 0,
-            "targets": 0.4894762604013705,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 1,
-            "attempts": 0
-          }
-        },
-        {
-          "id": "00-0040164",
-          "name": "Jaylin Lane",
-          "position": "WR",
-          "depthRank": 7,
-          "baseline": {
-            "carries": 0,
-            "targets": 0.13541255428345833,
-            "attempts": 0
-          },
-          "last": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          }
-        }
-      ],
-      "players": [
-        {
-          "id": "00-0037256",
-          "nflverseId": "00-0037256",
-          "name": "Rachaad White",
-          "position": "RB",
-          "depthRank": 2,
-          "lastOpportunities": {
-            "carries": 7,
-            "targets": 5,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "rushing_yards",
-              "opportunities": 5.781287011448875,
-              "rate": 3.9598332435768993,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9696
-            },
-            {
-              "key": "receiving_yards",
-              "opportunities": 2.385708645874457,
-              "rate": 5.743412103074352,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 2.385708645874457,
-              "rate": 0.7964553616541646,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0033699",
-          "nflverseId": "00-0033699",
-          "name": "Austin Ekeler",
-          "position": "RB",
-          "depthRank": 3,
-          "lastOpportunities": {
-            "carries": 1,
-            "targets": 2,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "rushing_yards",
-              "opportunities": 1.9976312672720093,
-              "rate": 4.189749865365349,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9696
-            },
-            {
-              "key": "receiving_yards",
-              "opportunities": 1.4528227398341886,
-              "rate": 5.917753313381787,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 1.4528227398341886,
-              "rate": 0.776100897819581,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0033955",
-          "nflverseId": "00-0033955",
-          "name": "Jeremy McNichols",
-          "position": "RB",
-          "depthRank": 4,
-          "lastOpportunities": {
-            "carries": 5,
-            "targets": 0,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "rushing_yards",
-              "opportunities": 1.9739439399921044,
-              "rate": 3.9725198492091907,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9696
-            }
-          ]
-        },
-        {
-          "id": "00-0039910",
-          "nflverseId": "00-0039910",
-          "name": "Jayden Daniels",
-          "position": "QB",
-          "depthRank": 1,
-          "lastOpportunities": {
-            "carries": 4,
-            "targets": 0,
-            "attempts": 40
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "passing_yards",
-              "opportunities": 33.82352941176471,
-              "rate": 7.455996577612033,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0025
-            },
-            {
-              "key": "rushing_yards",
-              "opportunities": 6.058823529411765,
-              "rate": 6.070585933132058,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9696
-            }
-          ]
-        },
-        {
-          "id": "00-0037809",
-          "nflverseId": "00-0037809",
-          "name": "Chig Okonkwo",
-          "position": "TE",
-          "depthRank": 1,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 7,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 6.0091324200913245,
-              "rate": 7.664049715258232,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 6.0091324200913245,
-              "rate": 0.726922006938535,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0031588",
-          "nflverseId": "00-0031588",
-          "name": "Stefon Diggs",
-          "position": "WR",
-          "depthRank": 2,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 7,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 7.534642662302237,
-              "rate": 6.105299970917712,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 7.534642662302237,
-              "rate": 0.6424240639368582,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0041040",
-          "nflverseId": "00-0041040",
-          "name": "Antonio Williams",
-          "position": "WR",
-          "depthRank": 3,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 4,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 4.49743387287801,
-              "rate": 6.970629379260973,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 4.49743387287801,
-              "rate": 0.6003563067529593,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0041117",
-          "nflverseId": "00-0041117",
-          "name": "Athan Kaliakmanis",
-          "position": "QB",
-          "depthRank": 3,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 0,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "passing_yards",
-              "opportunities": 6.383734701934465,
-              "rate": 6.55951333042631,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0025
-            },
-            {
-              "key": "rushing_yards",
-              "opportunities": 0.5803395183576786,
-              "rate": 4.492579817102518,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9696
-            }
-          ]
-        },
-        {
-          "id": "00-0036628",
-          "nflverseId": "00-0036628",
-          "name": "John Bates",
-          "position": "TE",
-          "depthRank": 3,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 1,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 1,
-              "rate": 6.958310604903522,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 1,
-              "rate": 0.7367502345573956,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0037742",
-          "nflverseId": "00-0037742",
-          "name": "Treylon Burks",
-          "position": "WR",
-          "depthRank": 4,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 6,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 4.601658112909593,
-              "rate": 8.774238674028163,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 4.601658112909593,
-              "rate": 0.5939391751484069,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
-            }
-          ]
-        },
-        {
-          "id": "00-0036626",
-          "nflverseId": "00-0036626",
-          "name": "Dyami Brown",
-          "position": "WR",
-          "depthRank": 5,
-          "lastOpportunities": {
-            "carries": 0,
-            "targets": 1,
-            "attempts": 0
-          },
-          "allocation": {},
-          "assumption": "Inputs derived from prior team-game usage, opponent defensive efficiency, and frozen training priors; allocation fitted on historical absences.",
-          "markets": [
-            {
-              "key": "receiving_yards",
-              "opportunities": 1.856691669956573,
-              "rate": 8.391365169342308,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 1.0138
-            },
-            {
-              "key": "receptions",
-              "opportunities": 1.856691669956573,
-              "rate": 0.6266136708522007,
-              "line": null,
-              "overOdds": null,
-              "underOdds": null,
-              "book": null,
-              "source": null,
-              "updatedAt": null,
-              "inputSource": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-              "opponentMultiplier": 0.9714
             }
           ]
         }

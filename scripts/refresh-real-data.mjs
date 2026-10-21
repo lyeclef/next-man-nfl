@@ -11,12 +11,38 @@ import {fetchLiveOdds} from '../lib/live-odds.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url)),cache=path.join(root,'.cache/real-data');await mkdir(cache,{recursive:true});
 let asOf=new Date().toISOString();const season=2026;
 const sourceURLs={stats:`https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${season}.csv`,injuries:`https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_${season}.csv`,depth:`https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_${season}.csv`,games:'https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv'};
-const sources=[],raw={},failures=[];
+const sources=[],raw={},failures=[],minDepthDate=new Date(Date.now()-16*86400000).toISOString().slice(0,10);
 for(const [kind,url] of Object.entries(sourceURLs)){
   const r=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!r.ok)throw new Error(`${kind}: HTTP ${r.status}. Real-data refresh stopped; no substitute records created.`);
-  const text=await r.text();await writeFile(path.join(cache,`${kind}_${season}.csv`),text);raw[kind]=parseCSV(text);sources.push({kind,url,retrievedAt:new Date().toISOString(),sha256:createHash('sha256').update(text).digest('hex'),rows:raw[kind].length});
+  if(kind==='depth'){
+    const hash=createHash('sha256'),decoder=new TextDecoder(),filtered=[];
+    let remainder='',header=null,totalRows=0;
+    for await(const chunk of r.body){
+      hash.update(chunk);
+      const str=remainder+decoder.decode(chunk,{stream:true});
+      let pos=0,nl;
+      while((nl=str.indexOf('\n',pos))!==-1){
+        const line=str.slice(pos,nl).replace(/\r$/,'');pos=nl+1;
+        if(header===null){header=line;filtered.push(line);continue;}
+        if(!line)continue;
+        totalRows++;
+        if(line.slice(0,10)>=minDepthDate&&/,(?:QB|RB|WR|TE),/.test(line))filtered.push(line);
+      }
+      remainder=str.slice(pos);
+    }
+    const tail=(remainder+decoder.decode()).replace(/\r$/,'');
+    if(tail){totalRows++;if(tail.slice(0,10)>=minDepthDate&&/,(?:QB|RB|WR|TE),/.test(tail))filtered.push(tail);}
+    const filteredText=filtered.join('\n');
+    await writeFile(path.join(cache,`${kind}_${season}.csv`),filteredText);
+    raw[kind]=parseCSV(filteredText).map(d=>({dt:d.dt,team:d.team,player_name:d.player_name,espn_id:d.espn_id,gsis_id:d.gsis_id,pos_abb:d.pos_abb,pos_rank:d.pos_rank}));
+    sources.push({kind,url,retrievedAt:new Date().toISOString(),sha256:hash.digest('hex'),rows:totalRows});
+  }else{
+    const text=await r.text(),sha256=createHash('sha256').update(text).digest('hex');await writeFile(path.join(cache,`${kind}_${season}.csv`),text);
+    raw[kind]=parseCSV(text);sources.push({kind,url,retrievedAt:new Date().toISOString(),sha256,rows:raw[kind].length});
+  }
 }
 const stats=normalizeStats(raw.stats),cases=JSON.parse(await readFile(path.join(root,'data/verified-injuries.json'),'utf8')),injuries=[];
+delete raw.stats;
 for(const c of cases){
   try{
     const r=await fetch(c.source,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw new Error(`HTTP ${r.status}`);const html=await r.text();
@@ -33,6 +59,7 @@ sources.push(...liveOddsResult.sources);failures.push(...liveOddsResult.failures
 asOf=new Date().toISOString(); // Information cutoff is after all inputs and live odds were observed.
 let watch={asOf,teamsObserved:0,records:[],notes:'Watchlist unavailable. Confirmed source records remain separate.'};
 if(watchFeed)try{watch=injuryWatch(watchFeed,raw.depth,raw.games,{asOf,season});}catch(e){failures.push(`ESPN watchlist rejected: ${e.message}`);}
+watchFeed=null;
 for(const r of raw.injuries){
   if(!POSITIONS.includes(r.position)||!['Out','Doubtful'].includes(r.report_status)||!r.gsis_id||/not injury|personal|rest/i.test(r.report_primary_injury))continue;
   const upcoming=raw.games.find(g=>Number(g.season)===season&&g.game_type==='REG'&&Number(g.week)===Number(r.week)&&kickoffUTC(g)>Date.parse(asOf)&&[canonicalTeam(g.home_team),canonicalTeam(g.away_team)].includes(canonicalTeam(r.team)));
